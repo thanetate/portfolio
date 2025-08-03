@@ -25,6 +25,19 @@
 	margin-left: 200px;
 	margin-top: 1px;
 }
+.experience3-container {
+	margin-top: 40px;
+}
+.experience3-container .title-arrow-container {
+	display: flex;
+	flex-direction: row;
+}
+.experience3-container .newarrow {
+	width: 20px;
+	height: 20px;
+	margin-left: 200px;
+	margin-top: 1px;
+}
 
 @media (min-width: 500px) {
     .experience-container .sub-container {
@@ -93,6 +106,36 @@
 		height: 23px;
 	}
 	.experience2-container .newarrow {
+		width: 20px;
+		height: 20px;
+		margin-left: 240px;
+		margin-top: 3px;
+	}
+	.experience3-container {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: row;
+	}
+	.experience3-container .date {
+		font-size: small;
+		color: #a9a9a9;
+		padding: 5px;
+		padding-left: 0px;
+		margin-left: -10px;
+		position: absolute;
+	}
+	.experience3-container .sub-container {
+		margin-left: 155px;
+	}
+	.experience3-container .bubbles {
+		margin-top: 10px;
+	}
+	.experience3-container .title-arrow-container {
+		display: flex;
+		flex-direction: row;
+		height: 23px;
+	}
+	.experience3-container .newarrow {
 		width: 20px;
 		height: 20px;
 		margin-left: 240px;

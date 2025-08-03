@@ -33,6 +33,7 @@ function Skills() {
 			<div className="sub-containers">
 				<div className="title">Database</div>
 				<div className="bubbles">
+					<div className="r-bubble">SQL</div>
 					<div className="r-bubble">PostgreSQL</div>
                     <div className="r-bubble">MongoDB</div>
 				</div>
@@ -43,6 +44,8 @@ function Skills() {
 					<div className="y-bubble">Git</div>
 					<div className="y-bubble">Azure</div>
 					<div className="y-bubble">AWS</div>
+					<div className="y-bubble">Splunk</div>
+					<div className="y-bubble">Dynatrace</div>
 				</div>
 			</div>
 		</div>
