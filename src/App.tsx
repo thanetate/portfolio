@@ -1,5 +1,6 @@
 import Head from "./components/Head/Head";
 import RightSide from "./components/RightSide/RightSide";
+import NavBar from "./components/NavBar/NavBar";
 import { motion } from "framer-motion";
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
 			transition={{ duration: 1.3 }}
 		>
 			<div className="parent-container">
+				<NavBar />
 				<Head />
 				<RightSide />
 			</div>
