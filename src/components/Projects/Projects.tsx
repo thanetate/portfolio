@@ -8,16 +8,19 @@ const projects = [
 		site: "https://mapo.ink/app/",
 		desc: (
 			<>
-				Contributed to a browser-based mind mapping tool by: Implemented{" "}
-				<span className="white">touch features</span> for a seamless mobile and
-				tablet experience. Developed a{" "}
-				<span className="white">folder management feature</span> to help users
-				organize files efficiently. Created a{" "}
-				<span className="white">comment feature</span> that enables users to add
-				text annotations directly onto the canvas.
+			Mapo is a browser-based mind mapping tool, designed to be simple and intuitive. 
 			</>
+			// <>
+			// 	Contributed to a browser-based mind mapping tool by: Implemented{" "}
+			// 	<span className="white">touch features</span> for a seamless mobile and
+			// 	tablet experience. Developed a{" "}
+			// 	<span className="white">folder management feature</span> to help users
+			// 	organize files efficiently. Created a{" "}
+			// 	<span className="white">comment feature</span> that enables users to add
+			// 	text annotations directly onto the canvas.
+			// </>
 		),
-		bubbles: ["Angular", "Go", "PostgreSQL"],
+		bubbles: ["Angular", "Golang", "PostgreSQL", "Docker", "OpenTelemetry"],
 	},
 	{
 		demo: "/theorydemo.png",
