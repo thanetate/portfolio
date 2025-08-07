@@ -111,11 +111,12 @@
 		max-height: auto;
 		width: 100%;
 		height: auto;
-		margin-top: 15px;
-		order: 2;
+		/* margin-top: 15px; */
+		order: 1;
+		margin-bottom: 15px;
 	}
 	.sub-container {
-		order: 1;
+		order: 2;
 		margin-left: 0px;
 	}   
 }

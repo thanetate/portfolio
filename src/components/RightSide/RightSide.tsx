@@ -5,15 +5,17 @@ import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
 import { Education } from "../Education/Education";
 import "./RightSide.css";
+import Current from "../Current/Current";
 
 function RightSide() {
 	return (
 		<div className="right-container">
 			{/* <About /> */}
+			<Current />
+			<Projects />
 			<Skills />
 			<Education />
 			<Experience />
-			<Projects />
 			<Footer />
 		</div>
 	);

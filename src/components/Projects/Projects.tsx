@@ -72,7 +72,7 @@ const projects = [
 function Projects() {
 	return (
 		<div id="Projects" className="projects-container">
-			<div className="p-title">Projects</div>
+			{/* <div className="p-title">Projects</div> */}
 			{projects.map((project, index) => (
 				<a key={index} className={`project${index + 1}-container`}>
 					<img src={`${project.demo}`} alt="Demo" className="demo" />
