@@ -1,4 +1,41 @@
 .head-container {
+	margin-top: 100px;
+	position: relative;
+	max-width: 500px;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* border-color: red;
+	border-style: solid; */
+}
+.small-head-container {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+.small-head-container .leftside {
+	/* border-color: red;
+	border-style: solid; */
+}
+.small-head-container .rightside {
+	margin-top: 15px;
+	/* border-color: blue;
+	border-style: solid; */
+}
+.small-head-container .intro-title {
+	font-size: medium;
+}
+.small-head-container .intro-desc {
+	font-size: small;
+	margin-top: 5px;
+	color: #a9a9a9;
+}
+.profile {
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+}
+
+/* .head-container {
 	margin-top: 50px;
 	position: relative;
 	max-width: 500px;
@@ -30,12 +67,13 @@
 	font-size: medium;
 	color: #a9a9a9;
 }
+*/
 .head-container .version {
 	display: none;
 }
 .scroll {
 	display: none;
-}
+} 
 /* icons */
 .lightdark {
 	width: 35px;

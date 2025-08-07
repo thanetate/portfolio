@@ -1,4 +1,4 @@
-import About from "../About/About";
+// import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
@@ -9,7 +9,7 @@ import "./RightSide.css";
 function RightSide() {
 	return (
 		<div className="right-container">
-			<About />
+			{/* <About /> */}
 			<Skills />
 			<Education />
 			<Experience />
