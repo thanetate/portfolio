@@ -5,14 +5,14 @@ function Current() {
 		<div className="current-container">
 			<div className="current-box">
 				<div className="current-title">CURRENTLY</div>
-				<div className="current-company">Fisher Investments</div>
+				<a className="current-company" href="https://www.fisherinvestments.com/en-us">Fisher Investments</a>
 				<div className="current-pos">Software Engineer</div>
 			</div>
 
                 <div className="current-title">PREVIOUSLY</div>
             <div className="previous-box">
 				<div className="previous-single-box">
-				<div className="current-company">Fisher Investments</div>
+				<a className="current-company" href="https://www.fisherinvestments.com/en-us">Fisher Investments</a>
 				<div className="current-pos">Software Engineer Intern</div>
 				</div>
 				<div className="previous-single-box">

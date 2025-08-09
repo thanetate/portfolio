@@ -17,9 +17,10 @@
 }
 .current-company {
     font-size: medium;
-    margin-bottom: 5px;
+    text-decoration: none;
 }
 .current-pos {
+    margin-top: 5px;
     color: #a9a9a9;
     font-size: medium;
 }
