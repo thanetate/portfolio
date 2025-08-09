@@ -8,10 +8,17 @@ function Current() {
 				<div className="current-company">Fisher Investments</div>
 				<div className="current-pos">Software Engineer</div>
 			</div>
-            <div className="previous-box">
+
                 <div className="current-title">PREVIOUSLY</div>
+            <div className="previous-box">
+				<div className="previous-single-box">
 				<div className="current-company">Fisher Investments</div>
 				<div className="current-pos">Software Engineer Intern</div>
+				</div>
+				<div className="previous-single-box">
+				<div className="current-company">Freelance</div>
+				<div className="current-pos">Web Developer</div>
+				</div>
             </div>
 		</div>
 	);

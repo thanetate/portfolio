@@ -92,7 +92,21 @@
 .project4-container .exportgithub {
 	margin-left: 145px;
 }
-
+.bubbles {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.g-bubble {
+	font-size: small;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 100px;
+	background-color: #1c4829;
+	color: #21c55d;
+}
 @media (max-width: 500px) {
     .projects-container {
 		margin-left: 10px;

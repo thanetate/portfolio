@@ -23,3 +23,9 @@
     color: #a9a9a9;
     font-size: medium;
 }
+.previous-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}

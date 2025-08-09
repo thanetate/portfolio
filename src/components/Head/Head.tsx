@@ -17,8 +17,8 @@ export default function Head() {
 					/>
 				</div>
 				<div className="rightside">
-					<div className="intro-title">Hi, I'm Thane Tate ツ</div>
-					<div className="intro-desc">I'm a Software Engineer interested in the intersection between finance and technology.</div>
+					<div className="intro-title">Hi, I'm Thane Tate</div>
+					<div className="intro-desc">I'm a Software Engineer based in Dallas, TX.</div>
 				</div>
 				</div>
 				{/* <div className="name">Thane Tate</div>
