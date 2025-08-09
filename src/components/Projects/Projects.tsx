@@ -8,7 +8,8 @@ const projects = [
 		site: "https://mapo.ink/app/",
 		desc: (
 			<>
-			Mapo is a browser-based mind mapping tool, designed to be simple and intuitive. 
+				Mapo is a browser-based mind mapping tool, designed to be simple and
+				intuitive.
 			</>
 			// <>
 			// 	Contributed to a browser-based mind mapping tool by: Implemented{" "}
@@ -29,15 +30,17 @@ const projects = [
 		site: "https://www.theoryclimbing.com/",
 		desc: (
 			<>
-				Theory Climbing is an <span className="white">e-commerce</span> web
+				Theory Climbing is an e-commerce store for climbing apparel, integrated
+				with the Stripe API for secure checkout.
+				{/* Theory Climbing is an <span className="white">e-commerce</span> web
 				application I built to sell climbing apparel. Featuring secure
 				authentication via <span className="white">Supabase Auth</span> and a
 				secure checkout session using the{" "}
 				<span className="white">Stripe API, </span>
-				this site ensures a safe and user-friendly shopping experience.
+				this site ensures a safe and user-friendly shopping experience. */}
 			</>
 		),
-		bubbles: ["React", "ASP.NET Core", "PostgreSQL", "Azure"],
+		bubbles: ["React", "ASP.NET Core", "PostgreSQL", "Azure", "Stripe"],
 	},
 	{
 		demo: "/readingrealm.png",
@@ -45,11 +48,12 @@ const projects = [
 		github: "https://github.com/ksheahen/Reading-Realm",
 		desc: (
 			<>
-				Reading Realm is a platform for book lovers to track their reading,
+				Reading Realm is a platform for book lovers to track their readings, share reviews, and set reading goals.
+				{/* Reading Realm is a platform for book lovers to track their reading,
 				share reviews, and set goals with the help of the{" "}
 				<span className="white">Google Books API.</span> It features secure
 				authentication using <span className="white">JWT</span> and delivers a
-				user-focused experience shaped by customer feedback.
+				user-focused experience shaped by customer feedback. */}
 			</>
 		),
 		bubbles: ["React", "Node.js", "Express.js", "MongoDB"],
@@ -77,7 +81,11 @@ function Projects() {
 		<div id="Projects" className="projects-container">
 			{/* <div className="p-title">Projects</div> */}
 			{projects.map((project, index) => (
-				<a key={index} className={`project${index + 1}-container`}>
+				<a
+					key={index}
+					className={`project${index + 1}-container`}
+					href={`/${index + 1}`}
+				>
 					<img src={`${project.demo}`} alt="Demo" className="demo" />
 					<div className="sub-container">
 						<div className="title">{project.title}</div>
