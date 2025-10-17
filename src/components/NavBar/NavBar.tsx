@@ -1,12 +1,12 @@
-import "./NavBar.css"
+import "./NavBar.less"
 
-function NavBar() {
+function NavBarComponent() {
     return (
-        <div className="navbar-container">
+        <div className="navbar-component-container">
             <a href="#">Work</a>
             <a href="#Projects">About</a>
             <a href="#Skills">Skills</a>
         </div>
     )
 }
-export default NavBar;
+export default NavBarComponent;

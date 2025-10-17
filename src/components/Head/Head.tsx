@@ -1,32 +1,26 @@
-// import Icons from "../Icons/Icons";
-import "./Head.css";
+import "./Head.less";
 
 export default function Head() {
 	return (
 		<>
-			<div className="head-container">
-				<div className="small-head-container">
-				<div className="leftside">
+			<div className="head-component-container">
+				<div className="leftright-container">
+				<div className="left">
 
 				<img
 					className="profile"
 					src="/profile3.png"
 					alt="Profile Picture"
-					width="150px"
-					height="150px"
+					width="100px"
+					height="100px"
 					/>
 				</div>
-				<div className="rightside">
-					<div className="intro-title">Hi, I'm Thane Tate</div>
-					<div className="intro-desc">I'm a Software Engineer based in Dallas, TX.</div>
+				<div className="right">
+					<div className="title">Hi, I'm Thane Tate</div>
+					<div className="description">I am a Software Engineer based in Dallas, TX.</div>
 				</div>
 				</div>
-				{/* <div className="name">Thane Tate</div>
-				<div className="fullstack">I am a Software Engineer ツ</div>
-				<div className="location">📍 Dallas, Texas</div>
-				<p>Eager to Expand My Skills in Full-Stack Development</p> */}
-				{/* <Icons /> */}
-				<div className="scroll">
+				{/* <div className="scroll">
 					<div className="group">
 						<a className="about" href="#About">
 							<div className="newscroll"></div>
@@ -52,7 +46,7 @@ export default function Head() {
 						</a>
 					</div>
 				</div>
-				<div className="version">v3.3.2</div>
+				<div className="version">v3.3.2</div> */}
 			</div>
 		</>
 	);

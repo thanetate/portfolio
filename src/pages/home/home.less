@@ -1,0 +1,25 @@
+@import '../../styles.less';
+
+.homepage-container {
+    border-color: red;
+    border-style: solid;
+    padding: @page-margin;
+    padding-top: 0; //to offset the sticky navbar padding
+
+    .leftright-container {}
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding-top: 15px;
+    }
+
+    .head-container {}
+
+    .rightside-container {
+        border-color: blue;
+        border-style: solid;
+    }
+}

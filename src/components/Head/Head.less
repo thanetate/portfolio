@@ -1,0 +1,33 @@
+@import '../../styles.less';
+
+.head-component-container {
+
+    .leftright-container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-top: @component-spacing;
+    }
+
+    .left {}
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile {
+        border-radius: 100px;
+    }
+
+    .title {
+        font-size: @fontsize-phone-medium;
+        color: @text-01;
+    }
+
+    .description {
+        font-size: @fontsize-phone-small;
+        color: @text-02;
+    }
+}
