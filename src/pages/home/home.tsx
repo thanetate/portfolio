@@ -1,6 +1,6 @@
-import NavBarComponent from "../../components/NavBar/NavBar";
-import Head from "../../components/Head/Head";
-// import RightSide from "../../components/RightSide/RightSide";
+import NavBarComponent from "../../components/navbar/navbar";
+import HeadComponent from "../../components/head/head";
+import ExperienceComponent from "../../components/experience/experience";
 import { motion } from "framer-motion";
 import "./home.less";
 
@@ -18,7 +18,10 @@ function Homepage() {
 						<NavBarComponent />
 					</div>
 					<div className="head-container">
-						<Head />
+						<HeadComponent />
+					</div>
+					<div className="rightside-container">
+						<ExperienceComponent/>
 					</div>
 					{/* <div className="rightside-container">
 						<RightSide />

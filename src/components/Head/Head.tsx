@@ -1,24 +1,25 @@
 import "./Head.less";
 
-export default function Head() {
+function HeadComponent() {
 	return (
 		<>
 			<div className="head-component-container">
 				<div className="leftright-container">
-				<div className="left">
-
-				<img
-					className="profile"
-					src="/profile3.png"
-					alt="Profile Picture"
-					width="100px"
-					height="100px"
-					/>
-				</div>
-				<div className="right">
-					<div className="title">Hi, I'm Thane Tate</div>
-					<div className="description">I am a Software Engineer based in Dallas, TX.</div>
-				</div>
+					<div className="left">
+						<img
+							className="profile"
+							src="/profile3.png"
+							alt="Profile Picture"
+							width="100px"
+							height="100px"
+						/>
+					</div>
+					<div className="right">
+						<div className="title">Hi, I'm Thane Tate</div>
+						<div className="description">
+							I am a Software Engineer based in Dallas, TX.
+						</div>
+					</div>
 				</div>
 				{/* <div className="scroll">
 					<div className="group">
@@ -51,3 +52,5 @@ export default function Head() {
 		</>
 	);
 }
+
+export default HeadComponent;

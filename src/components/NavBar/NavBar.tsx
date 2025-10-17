@@ -1,4 +1,4 @@
-import "./NavBar.less"
+import "./navbar.less"
 
 function NavBarComponent() {
     return (
