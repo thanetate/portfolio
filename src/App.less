@@ -1,25 +1,37 @@
+/**
+ * Common styles used throughout the app
+ */
+@bg-01: #111111;
+@text-01: white;
+@text-02: #a9a9a9;
+
+@page-margin: 15px;
+
+@padding-xs: 5px;
+@padding-s: 8px;
+@padding-m: 13px;
+@padding-l: 21px;
+
 @font-face {
 	font-family: Aileron-Heavy;
 	src: url(/Aileron-Heavy.otf);
 }
+
 @font-face {
 	font-family: Aileron;
 	src: url(/Aileron-SemiBold.otf);
 }
+
 * {
 	font-family: "Aileron", sans-serif;
-	background-color: #111111;
-	color: white;
+	background-color: @bg-01;
+	color: @text-01;
 	margin: 0;
 	padding: 0;
 }
+
 html {
 	scroll-behavior: smooth;
-}
-li {
-	margin-left: 15px;
-	font-size: small;
-	color: #a9a9a9;
 }
 
 @media (min-width: 500px) {

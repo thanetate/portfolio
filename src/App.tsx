@@ -2,7 +2,7 @@ import Head from "./components/Head/Head";
 import RightSide from "./components/RightSide/RightSide";
 import NavBar from "./components/NavBar/NavBar";
 import { motion } from "framer-motion";
-import "./App.css";
+import "./App.less";
 
 function App() {
 	return (
