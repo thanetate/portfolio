@@ -1,6 +1,29 @@
 @import '../../styles.less';
 
 .experience-component-container {
-    border-color: red;
-    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .currently {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .previously {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .title {
+        color: @text-01;
+        font-size: @fontsize-phone-medium;
+    }
+
+    .experience {
+        color: @text-02;
+        font-size: @fontsize-phone-small;
+    }
 }

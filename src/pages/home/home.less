@@ -1,8 +1,6 @@
 @import '../../styles.less';
 
 .homepage-container {
-    border-color: red;
-    border-style: solid;
     padding: @page-margin;
     padding-top: 0; //to offset the sticky navbar padding
 
@@ -19,7 +17,8 @@
     .head-container {}
 
     .rightside-container {
-        border-color: blue;
-        border-style: solid;
+        .experience-container {
+            padding-top: @component-spacing-small;
+        }
     }
 }

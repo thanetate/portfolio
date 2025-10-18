@@ -21,7 +21,9 @@ function Homepage() {
 						<HeadComponent />
 					</div>
 					<div className="rightside-container">
-						<ExperienceComponent/>
+						<div className="experience-container">
+							<ExperienceComponent />
+						</div>
 					</div>
 					{/* <div className="rightside-container">
 						<RightSide />
