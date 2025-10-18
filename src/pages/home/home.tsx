@@ -3,6 +3,7 @@ import HeadComponent from "../../components/head/head";
 import ExperienceComponent from "../../components/experience/experience";
 import { motion } from "framer-motion";
 import "./home.less";
+import ProjectsComponent from "../../components/projects/Projects";
 
 function Homepage() {
 	return (
@@ -23,6 +24,7 @@ function Homepage() {
 					<div className="rightside-container">
 						<div className="experience-container">
 							<ExperienceComponent />
+							<ProjectsComponent />
 						</div>
 					</div>
 					{/* <div className="rightside-container">
