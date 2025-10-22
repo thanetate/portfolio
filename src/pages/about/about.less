@@ -1,1 +1,51 @@
 @import '../../styles.less';
+
+.aboutpage-container {
+    padding: @page-margin;
+    padding-top: 0; //to offset the sticky navbar padding
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding-top: 15px;
+        background-color: transparent;
+    }
+
+    .title {
+        margin-top: @component-spacing-large;
+        font-size: @fontsize-phone-medium;
+        color: @text-01;
+    }
+
+    .two {
+        margin-top: @component-spacing-small;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        margin-top: 15px;
+        color: @text-02;
+        font-size: @fontsize-phone-small;
+        line-height: 1.5;
+    }
+
+    mark {
+        color: @text-01;
+    }
+    
+    br {
+        margin-bottom: 10px;
+    }
+
+    .image-container {
+        margin-top: @component-spacing-small;
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+}

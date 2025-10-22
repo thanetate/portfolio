@@ -2,7 +2,7 @@ import NavBarComponent from "../../components/navbar/navbar";
 import HeadComponent from "../../components/head/head";
 import ExperienceComponent from "../../components/experience/experience";
 import ProjectsComponent from "../../components/projects/projects";
-import FooterComponent from "../../components/footer/Footer";
+import FooterComponent from "../../components/footer/footer";
 import { motion } from "framer-motion";
 import "./home.less";
 
