@@ -7,9 +7,9 @@ function FooterComponent() {
 			<div className="text">Designed and developed by Thane Tate.</div>
 			<div className="leftright-container">
 				<div className="links-container">
-					<a>LinkedIn</a>
-					<a>Github</a>
-					<a>Email</a>
+					<a href="https://linkedin.com/in/thanetate">LinkedIn</a>
+					<a href="https://github.com/thanetate">Github</a>
+					<a href="mailto:thaneallantate@gmail.com">Email</a>
 				</div>
 				<div className="version-container">
 					<div className="version">v4.0.0</div>
