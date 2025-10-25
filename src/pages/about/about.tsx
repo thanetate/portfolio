@@ -46,6 +46,7 @@ function Aboutpage() {
 				<NavBarComponent />
 			</div>
 			<div className="title">About Me</div>
+			<LineComponent />
 			<div className="content">
 				Hey, I’m Thane! My journey into tech began with a curiosity for creating
 				websites, and today, I’m a student at the{" "}
