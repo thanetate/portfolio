@@ -48,4 +48,40 @@
         }
     }
 
+    .experience-container {
+        .rightleft-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .left {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        }
+        .e-company {
+            color: @text-01;
+            font-size: @fontsize-phone-medium;
+        }
+
+        .e-title {
+            color: @text-02;
+            font-size: @fontsize-phone-medium;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .e-date {
+            color: @text-02;
+            font-size: @fontsize-phone-small;
+        }
+    }
+
 }

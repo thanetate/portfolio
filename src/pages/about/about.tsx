@@ -26,9 +26,16 @@ function Aboutpage() {
 	const experienceList = experiences.map((experience) => {
 		return (
 			<div key={experience.id}>
-				<div className="e-title">{experience.title}</div>
-				<div className="e-company">{experience.company}</div>
-				<div className="e-date">{experience.date}</div>
+				<div className="rightleft-container">
+					<div className="right">
+						<div className="e-company">{experience.company}</div>
+						<div className="e-title">{experience.title}</div>
+					</div>
+					<div className="left">
+						<div className="e-date">{experience.date}</div>
+					</div>
+				</div>
+				<LineComponent />
 			</div>
 		);
 	});
