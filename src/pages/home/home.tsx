@@ -23,15 +23,15 @@ function Homepage() {
 						<HeadComponent />
 					</div>
 					<div className="rightside-container">
-						<div className="experience-container">
+						<a className="experience-container">
 							<ExperienceComponent />
-						</div>
-						<div className="projects-container">
+						</a>
+						<a className="projects-container">
 							<ProjectsComponent />
-						</div>
-						<div className="footer-container">
+						</a>
+						<a className="footer-container">
 							<FooterComponent />
-						</div>
+						</a>
 					</div>
 					{/* <div className="rightside-container">
 						<RightSide />
