@@ -1,0 +1,26 @@
+@import '../../styles.less';
+
+.mapopage-container {
+    padding: @page-margin;
+    padding-top: 0; //to offset the sticky navbar padding
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        padding-top: 15px;
+        background-color: transparent;
+    }
+    .s-title {
+        margin-top: @component-spacing-large;
+        font-size: @fontsize-phone-small;
+        color: @text-02;
+        margin-bottom: 10px;
+    }
+    .title {
+        font-size: @fontsize-phone-medium;
+        color: @text-01;
+        margin-bottom: 15px;
+    }
+}
