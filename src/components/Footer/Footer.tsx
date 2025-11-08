@@ -1,9 +1,8 @@
-import LineComponent from "../line/line";
 import "./Footer.less";
 function FooterComponent() {
 	return (
 		<div className="footer-component-container">
-			<LineComponent />
+
 			<div className="text">Designed and developed by Thane Tate.</div>
 			<div className="leftright-container">
 				<div className="links-container">

@@ -36,17 +36,18 @@ function Skillspage() {
 			<div className="s-title">Database</div>
 			<div className="bubbles-container">
 				<div className="red-bubble">SQL</div>
+				<div className="red-bubble">SQL Server</div>
 				<div className="red-bubble">PostgreSQL</div>
-				<div className="red-bubble">MongoDB</div>
-				<div className="red-bubble">Microsoft SQL Server Management Studio</div>
-				<div className="red-bubble">Supabase</div>
+				<div className="red-bubble">SQLite</div>
 			</div>
 			<LineComponent />
 			<div className="s-title">Tools</div>
 			<div className="bubbles-container">
 				<div className="yellow-bubble">Azure</div>
 				<div className="yellow-bubble">AWS</div>
+				<div className="yellow-bubble">Git</div>
 				<div className="yellow-bubble">Docker</div>
+				<div className="yellow-bubble">SSMS</div>
 				<div className="yellow-bubble">Azure Data Factory</div>
 				<div className="yellow-bubble">Apache Airflow</div>
 				<div className="yellow-bubble">Splunk</div>

@@ -5,6 +5,7 @@ import ProjectsComponent from "../../components/projects/projects";
 import FooterComponent from "../../components/footer/footer";
 import { motion } from "framer-motion";
 import "./home.less";
+import LineComponent from "../../components/line/line";
 
 function Homepage() {
 	return (
@@ -30,6 +31,7 @@ function Homepage() {
 							<ProjectsComponent />
 						</a>
 						<a className="footer-container">
+							<LineComponent />
 							<FooterComponent />
 						</a>
 					</div>

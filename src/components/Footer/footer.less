@@ -1,39 +1,41 @@
 @import '../../styles.less';
 
 .footer-component-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 
-    .text {
-        font-size: @fontsize-phone-small;
-        color: @text-01;
-    }
+	.text {
+		font-size: @fontsize-phone-small;
+		color: @text-01;
+	}
 
-    .leftright-container {
-        display: flex;
-        flex-direction: row;
-    }
+	.leftright-container {
+		display: flex;
+		flex-direction: row;
+	}
 
-    .links-container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        font-size: @fontsize-phone-small;
+	.links-container {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		font-size: @fontsize-phone-small;
 
-        a {
-            color: @text-02;
-            text-decoration: none;
-        }
-    }
-    .version-container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        width: 100%;
-    }
-    .version {
-        font-size: @fontsize-phone-small;
-        color: @text-02;
-    }
+		a {
+			color: @text-02;
+			text-decoration: none;
+		}
+	}
+
+	.version-container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 100%;
+	}
+
+	.version {
+		font-size: @fontsize-phone-small;
+		color: @text-02;
+	}
 }
