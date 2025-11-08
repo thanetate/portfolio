@@ -6,7 +6,37 @@ import "./project.less";
 
 function Projectpage() {
 	const { projectname } = useParams();
-	const projecttitle = projectname ? projectname.charAt(0).toUpperCase() + projectname.slice(1) : "";
+
+	type Project = {
+		paramname: string,
+		name: string,
+		description: string,
+	};
+
+	const projects: Project[] = [
+		{
+			paramname: "mapo",
+			name: "Mapo",
+			description: "",
+		},
+		{
+			paramname: "theory",
+			name: "Theory",
+			description: "",
+
+		},
+		{
+			paramname: "readingrealm",
+			name: "Reading Realm",
+			description: "",
+
+		},
+	];
+
+	const currentProject = projects.find(
+		(object) => object.paramname.toLowerCase() === projectname?.toLowerCase()
+	);
+
 	return (
 		<div className="projectpage-container">
 			<motion.div
@@ -20,8 +50,17 @@ function Projectpage() {
 					<NavBarComponent />
 				</div>
 				<div className="s-title">Project Details</div>
-				<div className="title">{projecttitle}</div>
+				<div className="title">{currentProject?.name}</div>
 				<LineComponent />
+
+				{currentProject ? (
+					<div className="project-info">
+						<div className="title">{currentProject.name}</div>
+						<div className="description">{currentProject.description}</div>
+					</div>
+				) : (
+					<p>Project not found.</p>
+				)}
 			</motion.div>
 		</div>
 	)
