@@ -1,3 +1,4 @@
+import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import "./skills.less";
@@ -52,6 +53,10 @@ function Skillspage() {
 				<div className="yellow-bubble">Apache Airflow</div>
 				<div className="yellow-bubble">Splunk</div>
 				<div className="yellow-bubble">Dynatrace</div>
+			</div>
+			<div className="footer-container">
+				<LineComponent />
+				<FooterComponent />
 			</div>
 		</div>
 	);
