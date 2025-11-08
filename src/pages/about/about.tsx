@@ -1,3 +1,4 @@
+import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import "./about.less";
@@ -28,8 +29,8 @@ function Aboutpage() {
 			<div key={experience.id}>
 				<div className="rightleft-container">
 					<div className="right">
-						<div className="e-company">{experience.company}</div>
 						<div className="e-title">{experience.title}</div>
+						<div className="e-company">{experience.company}</div>
 					</div>
 					<div className="left">
 						<div className="e-date">{experience.date}</div>
@@ -72,6 +73,7 @@ function Aboutpage() {
 			<div className="title two">Work Experience</div>
 			<LineComponent />
 			<div className="experience-container">{experienceList}</div>
+			<FooterComponent />
 		</div>
 	);
 }

@@ -1,88 +1,89 @@
 @import '../../styles.less';
 
 .aboutpage-container {
-    padding: @page-margin;
-    padding-top: 0; //to offset the sticky navbar padding
+	padding: @page-margin;
+	padding-top: 0; //to offset the sticky navbar padding
 
-    .navbar-container {
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0;
-        padding-top: 15px;
-        background-color: transparent;
-    }
+	.navbar-container {
+		display: flex;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		padding-top: 15px;
+		background-color: transparent;
+	}
 
-    .title {
-        margin-top: @component-spacing-large;
-        font-size: @fontsize-phone-medium;
-        color: @text-01;
-        margin-bottom: 15px;
-    }
+	.title {
+		margin-top: @component-spacing-large;
+		font-size: @fontsize-phone-medium;
+		color: @text-01;
+		margin-bottom: 15px;
+	}
 
-    .two {
-        margin-top: @component-spacing-small;
-        margin-bottom: 15px;
-    }
+	.two {
+		margin-top: @component-spacing-small;
+		margin-bottom: 15px;
+	}
 
-    .content {
-        margin-top: 15px;
-        color: @text-02;
-        font-size: @fontsize-phone-small;
-        line-height: 1.5;
-    }
+	.content {
+		margin-top: 15px;
+		color: @text-02;
+		font-size: @fontsize-phone-small;
+		line-height: 1.5;
+	}
 
-    mark {
-        color: @text-01;
-    }
-    
-    br {
-        margin-bottom: 10px;
-    }
+	mark {
+		color: @text-01;
+	}
 
-    .image-container {
-        margin-top: @component-spacing-small;
-        max-width: 100%;
+	br {
+		margin-bottom: 10px;
+	}
 
-        img {
-            max-width: 100%;
-        }
-    }
+	.image-container {
+		margin-top: @component-spacing-small;
+		max-width: 100%;
 
-    .experience-container {
-        .rightleft-container {
-            display: flex;
-            flex-direction: row;
-            margin-top: 15px;
+		img {
+			max-width: 100%;
+		}
+	}
 
-            .right {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
+	.experience-container {
+		.rightleft-container {
+			display: flex;
+			flex-direction: row;
+			margin-top: 15px;
 
-            .left {
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-            }
-        }
-        .e-company {
-            color: @text-01;
-            font-size: @fontsize-phone-medium;
-        }
+			.right {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
 
-        .e-title {
-            color: @text-02;
-            font-size: @fontsize-phone-medium;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
+			.left {
+				display: flex;
+				justify-content: flex-end;
+				width: 100%;
+			}
+		}
 
-        .e-date {
-            color: @text-02;
-            font-size: @fontsize-phone-small;
-        }
-    }
+		.e-title {
+			color: @text-01;
+			font-size: @fontsize-phone-medium;
+		}
+
+
+		.e-company {
+			color: @text-02;
+			font-size: @fontsize-phone-medium;
+
+		}
+
+		.e-date {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+		}
+	}
 
 }
