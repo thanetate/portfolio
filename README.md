@@ -1,11 +1,12 @@
-# My Portfolio Website
-Check it out! - https://www.thanetate.dev/
+## Portfolio Website
 
-# Overview
-Check out my portfolio website, created with a minimal design in mind. Intended to showcase my programming skills and projects. Any feedback is welcomed!
+My portfolio website highlights my experience, projects, and skills. Explore it here: [thanetate.dev](https://www.thanetate.dev/)
 
-Email me : thanetate1@gmail.com
- 
+## Tech Stack
+- React
+- TypeScript
+- Figma
+
 ## Demo
 ![newportdemo1](https://github.com/user-attachments/assets/bd454ce3-6c78-4956-9133-cc79f7cae3ef)
 
