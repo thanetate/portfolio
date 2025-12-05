@@ -3,6 +3,7 @@ import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import { motion } from "framer-motion";
 import "./project.less";
+import FooterComponent from "../../components/footer/footer";
 
 function Projectpage() {
 	const { projectname } = useParams();

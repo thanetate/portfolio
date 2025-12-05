@@ -5,7 +5,14 @@ function ProjectsComponent() {
 	return (
 		<div className="projects-component-container">
 			<Link className="project1-container" to="/projects/mapo">
-				<img src="/mapodemo.png" alt=""/>
+				<video
+					src="/mapo_d.mp4"
+					autoPlay
+					loop
+					muted
+					playsInline
+				/>
+
 				<div className="title">Mapo</div>
 				<div className="desc">
 					Browser-based mind mapping tool, designed to be simple and intuitive.
