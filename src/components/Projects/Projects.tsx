@@ -12,7 +12,7 @@ function ProjectsComponent() {
 					muted
 					playsInline
 				/>
-
+				{/* <img src="/mapo-demo-basic.gif"></img> */}
 				<div className="title">Mapo</div>
 				<div className="desc">
 					Browser-based mind mapping tool, designed to be simple and intuitive.

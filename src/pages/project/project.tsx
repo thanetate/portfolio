@@ -12,25 +12,28 @@ function Projectpage() {
 		paramname: string,
 		name: string,
 		description: string,
+		image: string,
 	};
 
 	const projects: Project[] = [
 		{
 			paramname: "mapo",
 			name: "Mapo",
-			description: "",
+			description: "Mapo is a lightweight, browser-based mind mapping tool built for simplicity and ease of use. While the project was started by Ben Sivo, my contributions centered on improving the phone experience — adding smooth touch interactions and essential features like copy and delete functionality.",
+			image: "/mapo_pic1.png",
 		},
 		{
 			paramname: "theory",
 			name: "Theory",
 			description: "",
+			image: "",
 
 		},
 		{
 			paramname: "readingrealm",
 			name: "Reading Realm",
 			description: "",
-
+			image: "",
 		},
 	];
 
@@ -56,12 +59,19 @@ function Projectpage() {
 
 				{currentProject ? (
 					<div className="project-info">
-						<div className="title">{currentProject.name}</div>
 						<div className="description">{currentProject.description}</div>
+						<div className="box-container">
+							<LineComponent />
+							<div className="skills-container">
+								<div className="type">Type</div>
+								<div className="skills"></div>
+							</div>
+						</div>
 					</div>
 				) : (
 					<p>Project not found.</p>
 				)}
+				{/* <FooterComponent /> */}
 			</motion.div>
 		</div>
 	)
