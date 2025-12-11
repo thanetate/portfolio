@@ -29,7 +29,7 @@
 		margin-top: 15px;
 		color: @text-02;
 		font-size: @fontsize-phone-small;
-		line-height: 1.5;
+		line-height: 2;
 	}
 
 	mark {
@@ -50,6 +50,8 @@
 	}
 
 	.experience-container {
+		// margin-bottom: 30px;
+
 		.rightleft-container {
 			display: flex;
 			flex-direction: row;
@@ -87,5 +89,45 @@
 			font-size: @fontsize-phone-xsmall;
 		}
 	}
+
+	.education-container {
+		.rightleft-container {
+			display: flex;
+			flex-direction: row;
+			margin-top: 15px;
+			margin-bottom: 15px;
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				width: 150%;
+			}
+
+			.left {
+				display: flex;
+				justify-content: flex-end;
+				width: 50%;
+			}
+		}
+
+		.e-title {
+			color: @text-01;
+			font-size: @fontsize-phone-small;
+			margin-bottom: 5px;
+		}
+
+
+		.e-company {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 2.5px;
+		}
+
+		.e-date {
+			color: @text-02;
+			font-size: @fontsize-phone-xsmall;
+		}
+	}
+
 
 }

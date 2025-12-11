@@ -57,30 +57,27 @@ function Aboutpage() {
 				<div className="title">About Me</div>
 				<LineComponent />
 				<div className="content">
-					Hey, I’m Thane! My journey into tech began with a curiosity for creating
-					websites, and today, I’m a student at the{" "}
-					<mark> University of North Texas </mark>
-					studying computer science with a minor in mathematics set to graduate in
-					<mark> May 2026.</mark> <br></br> Over the past few years, I’ve immersed
-					myself in software development through a blend of personal projects and
-					university assignments. I’m particularly drawn to full-stack
-					development, enjoying the balance between front-end creativity and
-					back-end problem-solving.
-					<br></br> These days, I’m expanding my skills in technologies like C#
-					and the .NET Framework, always excited to tackle new challenges. I
-					thrive on collaborating in team settings where I can both learn from
-					others and contribute to solutions. When I’m not coding, you’ll find me{" "}
-					<mark> rock climbing, </mark>
-					hanging out with my two cats, or brainstorming ideas for my next
-					project. Im currently trying to grow my technical abilities, and
-					ultimately find my place in the tech industry.
+					Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about Microsoft Azure and how front-, middle-, and back-office systems operate in the finance space.
 				</div>
-				<div className="image-container">
-					<img src="/profile3.png" alt="" />
+				<div className="title two"> Education </div>
+				<LineComponent />
+				<div className="education-container">
+					<div className="rightleft-container">
+						<div className="right">
+							<div className="e-title">University of North Texas</div>
+							<div className="e-company">Bachelor of Science, Computer Science</div>
+							<div className="e-company">Minor in Mathematics</div>
+						</div>
+						<div className="left">
+							<div className="e-date">2021 - Present</div>
+						</div>
+					</div>
 				</div>
+				<LineComponent />
 				<div className="title two">Work Experience</div>
 				<LineComponent />
 				<div className="experience-container">{experienceList}</div>
+				{/* <LineComponent /> */}
 				<FooterComponent />
 			</motion.div>
 		</div>
