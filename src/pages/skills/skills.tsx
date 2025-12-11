@@ -25,6 +25,7 @@ function Skillspage() {
 					<div className="blue-bubble">JavaScript</div>
 					<div className="blue-bubble">TypeScript</div>
 					<div className="blue-bubble">Python</div>
+					<div className="blue-bubble">Golang</div>
 					<div className="blue-bubble">C#</div>
 					<div className="blue-bubble">C++</div>
 				</div>
@@ -45,8 +46,7 @@ function Skillspage() {
 				<LineComponent />
 				<div className="s-title">Database</div>
 				<div className="bubbles-container">
-					<div className="red-bubble">SQL</div>
-					<div className="red-bubble">SQL Server</div>
+					<div className="red-bubble">Microsoft SQL Server</div>
 					<div className="red-bubble">PostgreSQL</div>
 					<div className="red-bubble">SQLite</div>
 				</div>
@@ -55,9 +55,7 @@ function Skillspage() {
 				<div className="bubbles-container">
 					<div className="yellow-bubble">Azure</div>
 					<div className="yellow-bubble">AWS</div>
-					<div className="yellow-bubble">Git</div>
 					<div className="yellow-bubble">Docker</div>
-					<div className="yellow-bubble">SSMS</div>
 					<div className="yellow-bubble">Azure Data Factory</div>
 					<div className="yellow-bubble">Apache Airflow</div>
 					<div className="yellow-bubble">Splunk</div>

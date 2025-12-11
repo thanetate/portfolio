@@ -20,7 +20,8 @@ function Projectpage() {
 	type Project = {
 		paramname: string,
 		name: string,
-		description: string,
+		description1: string,
+		description2: string,
 		image: Demo[],
 		demo: string,
 		skills: Skill[],
@@ -33,43 +34,29 @@ function Projectpage() {
 		{
 			paramname: "mapo",
 			name: "Mapo",
-			description: "Mapo is a lightweight, browser-based mind mapping tool built for simplicity and ease of use. While the project was started by Ben Sivo, my contributions centered on improving the phone experience — adding smooth touch interactions and essential features like copy and delete functionality.",
+			description1: "Mapo is a lightweight, browser-based mind mapping tool built for simplicity and ease of use.",
+			description2: "Mind mapping is a technique used to help visually develop and organize ideas. They are most commonly used for note taking, brainstorming ideas, and project planning. By mapping ideas visually, we can break down and retain information better.",
 			skills: [
 				{ bubble: "Angular" },
-				{ bubble: "Go" },
+				{ bubble: "Golang" },
 				{ bubble: "PostgreSQL" },
+				{ bubble: "Linode" },
 				{ bubble: "Docker" },
 			],
-			team: "Ben Sivo",
+			team: "Ben Sivorivong",
 			github: "https://github.com/bensivo/mapo",
 			live: "https://mapo.ink/app/",
-			demo: "/mapo_d.mp4",
+			demo: "/mapo-demo-fast.mov",
 			image: [
 				{ image: "/mapo_pic1.png" },
+				{ image: "/mapo-homepage.png" },
 			],
 		},
 		{
 			paramname: "theory",
 			name: "theory",
-			description: "",
-			skills: [
-				{ bubble: "typescript" },
-				{ bubble: "typescript" },
-				{ bubble: "typescript" }
-			],
-			team: "ben sivo",
-			github: "ben sivo",
-			live: "ben sivo",
-			demo: "/mapo_d.mp4",
-			image: [
-				{ image: "" },
-			],
-
-		},
-		{
-			paramname: "readingrealm",
-			name: "reading realm",
-			description: "",
+			description1: "",
+			description2: "",
 			skills: [
 				{ bubble: "typescript" },
 				{ bubble: "typescript" },
@@ -108,7 +95,8 @@ function Projectpage() {
 
 				{currentProject ? (
 					<div className="project-info">
-						<div className="description">{currentProject.description}</div>
+						<div className="description1">{currentProject.description1}</div>
+						<div className="description2">{currentProject.description2}</div>
 						<div className="box-container">
 							<LineComponent />
 							<div className="skills-container">
