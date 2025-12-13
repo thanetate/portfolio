@@ -28,6 +28,7 @@ function Aboutpage() {
 	const experienceList = experiences.map((experience) => {
 		return (
 			<div key={experience.id}>
+				<LineComponent />
 				<div className="rightleft-container">
 					<div className="right">
 						<div className="e-title">{experience.title}</div>
@@ -37,7 +38,6 @@ function Aboutpage() {
 						<div className="e-date">{experience.date}</div>
 					</div>
 				</div>
-				<LineComponent />
 			</div>
 		);
 	});
@@ -73,11 +73,9 @@ function Aboutpage() {
 						</div>
 					</div>
 				</div>
-				<LineComponent />
 				<div className="title two">Work Experience</div>
-				<LineComponent />
 				<div className="experience-container">{experienceList}</div>
-				{/* <LineComponent /> */}
+				<LineComponent />
 				<FooterComponent />
 			</motion.div>
 		</div>
