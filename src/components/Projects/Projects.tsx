@@ -18,7 +18,8 @@ function ProjectsComponent() {
 				</div>
 			</Link>
 			<Link className="project2-container" to="/projects/theory">
-				<img src="/theorydemo.png" alt="" />
+				<img src="theory-img-1.png" alt="" />
+				{/* should i do demo or img?	 */}
 				<div className="title">Theory</div>
 				<div className="desc">
 					An e-commerce store for climbing apparel, integrated with the Stripe
