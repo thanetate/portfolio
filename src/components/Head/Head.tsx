@@ -4,7 +4,7 @@ function HeadComponent() {
 	return (
 		<>
 			<div className="head-component-container">
-				<div className="leftright-container">
+				<div className="hc-leftright-container">
 					<div className="left">
 						<img
 							className="profile"

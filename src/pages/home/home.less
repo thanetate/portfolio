@@ -26,6 +26,54 @@
 		gap: 30px;
 	}
 
-	.footer-contianer {}
+	.footer-container {}
 
+}
+
+@media (min-width: 600px) {
+	.homepage-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		.leftright-container {
+			border-color: red;
+			border-style: solid;
+			max-width: 600px;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.homepage-container {
+		display: flex;
+		justify-content: flex-start;
+
+		.leftright-container {
+			border-color: blue;
+			border-style: solid;
+
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			max-width: 100%;
+
+			.head-container {
+				display: flex;
+				justify-content: flex-start;
+				flex: 1;
+				border-color: green;
+				border-style: solid;
+			}
+
+			.rightside-container {
+				display: flex;
+				justify-content: flex-end;
+				flex: 1;
+				border-color: purple;
+				border-style: solid;
+
+			}
+		}
+	}
 }
