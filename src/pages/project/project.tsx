@@ -41,7 +41,7 @@ function Projectpage() {
 				{ bubble: "Golang" },
 				{ bubble: "PostgreSQL" },
 				{ bubble: "Docker" },
-				{ bubble: "Linode" },
+				{ bubble: "AWS" },
 			],
 			team: "Ben Sivorivong",
 			github: "https://github.com/bensivo/mapo",
@@ -54,17 +54,19 @@ function Projectpage() {
 		},
 		{
 			paramname: "theory",
-			name: "theory",
-			description1: "",
-			description2: "",
+			name: "Theory",
+			description1: "Theory is an e-commerce store for selling custom climbing apparel.",
+			description2: "My friend and I have been rock climbing for seven years and have always wanted to start our own climbing brand. I took the opportunity to build a site where we could sell our apparel, featuring a secure checkout experience using the Stripe API.",
 			skills: [
-				{ bubble: "typescript" },
-				{ bubble: "typescript" },
-				{ bubble: "typescript" }
+				{ bubble: "React" },
+				{ bubble: "C#" },
+				{ bubble: "ASP.NET Core" },
+				{ bubble: "PostgreSQL" },
+				{ bubble: "Azure" },
 			],
-			team: "ben sivo",
-			github: "ben sivo",
-			live: "ben sivo",
+			team: "",
+			github: "https://github.com/thanetate/theory",
+			live: "https://www.theoryclimbing.com/",
 			demo: "/mapo_d.mp4",
 			image: [
 				{ image: "" },
@@ -109,11 +111,15 @@ function Projectpage() {
 									))}
 								</div>
 							</div>
-							<LineComponent />
-							<div className="block-container">
-								<div className="block-title">Team</div>
-								<div className="block-info">{currentProject?.team}</div>
-							</div>
+							{currentProject?.team && (
+								<>
+									<LineComponent />
+									<div className="block-container">
+										<div className="block-title">Team</div>
+										<div className="block-info">{currentProject?.team}</div>
+									</div>
+								</>
+							)}
 							<LineComponent />
 							<div className="block-container">
 								<div className="block-title">Github</div>

@@ -69,7 +69,7 @@ function Aboutpage() {
 							<div className="e-company">Minor in Mathematics</div>
 						</div>
 						<div className="left">
-							<div className="e-date">2021 - Present</div>
+							<div className="e-date">May 2026</div>
 						</div>
 					</div>
 				</div>
