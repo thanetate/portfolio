@@ -17,6 +17,11 @@
 
 	.head-container {
 		margin-top: @component-spacing;
+
+	}
+
+	.experience-container {
+		margin-top: 20px;
 	}
 
 	.rightside-container {
@@ -24,10 +29,12 @@
 		flex-direction: column;
 		margin-top: 30px;
 		gap: 30px;
+
+		// hide the about page
+		.hidden {
+			display: none;
+		}
 	}
-
-	.footer-container {}
-
 }
 
 @media (min-width: 600px) {
@@ -35,10 +42,9 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		align-items: center;
 
 		.leftright-container {
-			border-color: red;
-			border-style: solid;
 			max-width: 600px;
 		}
 	}
@@ -48,32 +54,50 @@
 	.homepage-container {
 		display: flex;
 		justify-content: flex-start;
+		padding: 60px;
+		padding-top: 15px;
+		padding-bottom: 30px;
+
+		.navbar-container {
+			position: fixed;
+			left: 60px;
+			margin-top: 330px;
+		}
 
 		.leftright-container {
-			border-color: blue;
-			border-style: solid;
-
 			display: flex;
 			flex-direction: row;
 			width: 100%;
 			max-width: 100%;
 
-			.head-container {
+			.leftside-container {
 				display: flex;
+				position: fixed;
+				flex-direction: column;
 				justify-content: flex-start;
 				flex: 1;
-				border-color: green;
-				border-style: solid;
 			}
 
 			.rightside-container {
 				display: flex;
 				justify-content: flex-end;
-				flex: 1;
-				border-color: purple;
-				border-style: solid;
-
+				margin-top: 45px;
+				margin-left: 50%;
+				width: 50%;
 			}
+		}
+	}
+}
+
+@media (min-width: 1500px) {
+	.homepage-container {
+		padding: 120px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		.navbar-container {
+			left: 120px;
+			margin-top: 345px;
 		}
 	}
 }
