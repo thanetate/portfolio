@@ -1,4 +1,4 @@
-import "./Footer.less";
+import "./footer.less";
 function FooterComponent() {
 	return (
 		<div className="footer-component-container">
