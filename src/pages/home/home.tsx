@@ -53,7 +53,9 @@ function Homepage() {
 						</div>
 						<div className="rightside-container">
 							{showAbout ? (
-								<Aboutpage />
+								<div className="about-container">
+									<Aboutpage />
+								</div>
 							) : (
 								<>
 									<a className="projects-container">

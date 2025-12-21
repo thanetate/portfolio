@@ -57,7 +57,6 @@
 		padding: 60px;
 		padding-top: 15px;
 		padding-bottom: 30px;
-		align-items: stretch;
 
 		.navbar-container {
 			position: fixed;
@@ -69,6 +68,11 @@
 			display: flex;
 			flex-direction: row;
 			max-width: none;
+
+			border-color: purple;
+			border-style: solid;
+
+
 
 			.leftside-container {
 				display: flex;
@@ -84,30 +88,45 @@
 				margin-top: 45px;
 				margin-left: 50%;
 				width: 50%;
+			}
 
-				.about-container {
-					.aboutpage-container {
-						padding: 0px;
+			.about-container {
+				border-color: red;
+				border-style: solid;
 
-						.navbar-container {
-							display: none;
-						}
+				.aboutpage-container {
+					border-color: blue;
+					border-style: solid;
+					padding: 0px;
 
-						.title {
-							margin-top: 0px;
-						}
+					.navbar-container {
+						display: none;
+					}
 
-						// smaller titles
-						.two {
-							margin-top: 60px;
-						}
+					.title {
+						margin-top: 0px;
+					}
 
-						.experience-container {
-							margin-bottom: 60px;
+					.bg-white {
+						max-width: none;
+						width: 100%;
+						border-color: yellowgreen;
+						border-style: solid;
+
+						.content {
+							max-width: none;
+							width: 100%;
 						}
 					}
 				}
 			}
+
+			.projects-container {
+				border-color: red;
+				border-style: solid;
+			}
+
+
 		}
 	}
 }
@@ -121,48 +140,6 @@
 		.navbar-container {
 			left: 120px;
 			margin-top: 345px;
-		}
-
-		.about-container {
-			.aboutpage-container {
-				.title {
-					font-size: @fontsize-phone-large;
-				}
-
-				.content {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.experience-container {
-					.e-title {
-						font-size: @fontsize-phone-medium;
-					}
-
-
-					.e-company {
-						font-size: @fontsize-phone-medium;
-					}
-
-					.e-date {
-						font-size: @fontsize-phone-small;
-					}
-				}
-
-				.education-container {
-					.e-title {
-						font-size: @fontsize-phone-medium;
-					}
-
-					.e-company {
-						font-size: @fontsize-phone-medium;
-					}
-
-					.e-date {
-						font-size: @fontsize-phone-small;
-					}
-
-				}
-			}
 		}
 	}
 }
