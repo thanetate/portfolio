@@ -27,6 +27,14 @@ function Homepage() {
 		return () => window.removeEventListener("hashchange", handleHashChange);
 	}, []);
 
+	// scroll back to top
+	useEffect(() => {
+		if (activeSection) {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
+	}, [activeSection]);
+
+
 	return (
 		<div className="homepage-container">
 			<motion.div
@@ -78,12 +86,12 @@ function Homepage() {
 								</div>
 							)}
 							{activeSection === "#Mapo" && (
-								<div className="mapo-container">
+								<div className="project-container">
 									<Projectpage />
 								</div>
 							)}
 							{activeSection === "#Theory" && (
-								<div className="theory-container">
+								<div className="project-container">
 									<Projectpage />
 								</div>
 							)}

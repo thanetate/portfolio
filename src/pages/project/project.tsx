@@ -5,9 +5,18 @@ import { motion } from "framer-motion";
 import "./project.less";
 import 'remixicon/fonts/remixicon.css';
 import FooterComponent from "../../components/footer/footer";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Projectpage() {
 	const { projectname } = useParams();
+	const location = useLocation();
+
+	// remove '#' and make lowercase
+	const hashProject = location.hash.replace("#", "").toLowerCase();
+
+	// Use route param if it exists, otherwise use hash
+	const resolvedProjectName = projectname?.toLowerCase() || hashProject;
 
 	type Skill = {
 		bubble: string,
@@ -78,8 +87,13 @@ function Projectpage() {
 	];
 
 	const currentProject = projects.find(
-		(object) => object.paramname.toLowerCase() === projectname?.toLowerCase()
+		(project) => project.paramname.toLowerCase() === resolvedProjectName
 	);
+
+	useEffect(() => {
+		// Scroll to top whenever this page loads
+		window.scrollTo({ top: 0, behavior: "auto" });
+	}, []);
 
 	return (
 		<div className="projectpage-container">
