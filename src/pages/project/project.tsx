@@ -175,8 +175,8 @@ function Projectpage() {
 					)
 					}
 					{/* <FooterComponent /> */}
-				</motion.div>
-			</motion.div >
+				</motion.div >
+			</motion.div>
 		</div >
 	)
 }

@@ -17,10 +17,8 @@ function ProjectsComponent() {
 				transition={{ duration: 0.5, ease: "easeOut" }}
 				className="bg-white p-6 rounded-lg shadow-md"
 			>
-
 				<div className="projects-component-container">
-
-					<Link className="project1-container" to="/projects/mapo">
+					< Link className="project1-container" to="/projects/mapo">
 						<video
 							src="/mapo_d.mp4"
 							autoPlay
@@ -43,8 +41,8 @@ function ProjectsComponent() {
 						</div>
 					</Link>
 				</div>
-			</motion.div>
-		</motion.div>
+			</motion.div >
+		</motion.div >
 	);
 }
 

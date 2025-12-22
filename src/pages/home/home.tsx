@@ -8,22 +8,25 @@ import "./home.less";
 import LineComponent from "../../components/line/line";
 import Aboutpage from "../about/about";
 import { useEffect, useState } from "react";
+import Skillspage from "../skills/skills";
+import Projectpage from "../project/project";
 
 function Homepage() {
-	const [showAbout, setShowAbout] = useState(false);
+	const [activeSection, setActiveSection] = useState<string>("");
 
+	// runs once on mount bc of []
 	useEffect(() => {
+		// reads current url
 		const handleHashChange = () => {
-			setShowAbout(window.location.hash === "#About");
+			setActiveSection(window.location.hash);
 		};
-
-		// Check on first load
+		// only fires on first load, so we call it 
 		handleHashChange();
-
-		// Listen for changes
+		// listen for future hash changes
 		window.addEventListener("hashchange", handleHashChange);
 		return () => window.removeEventListener("hashchange", handleHashChange);
 	}, []);
+
 	return (
 		<div className="homepage-container">
 			<motion.div
@@ -52,11 +55,7 @@ function Homepage() {
 							</div>
 						</div>
 						<div className="rightside-container">
-							{showAbout ? (
-								<div className="about-container">
-									<Aboutpage />
-								</div>
-							) : (
+							{!activeSection && (
 								<>
 									<a className="projects-container">
 										<ProjectsComponent />
@@ -68,6 +67,27 @@ function Homepage() {
 
 								</>
 							)}
+							{activeSection === "#About" && (
+								<div className="about-container">
+									<Aboutpage />
+								</div>
+							)}
+							{activeSection === "#Skills" && (
+								<div className="skills-container">
+									<Skillspage />
+								</div>
+							)}
+							{activeSection === "#Mapo" && (
+								<div className="mapo-container">
+									<Projectpage />
+								</div>
+							)}
+							{activeSection === "#Theory" && (
+								<div className="theory-container">
+									<Projectpage />
+								</div>
+							)}
+
 						</div>
 					</div>
 				</motion.div>

@@ -24,7 +24,7 @@ function NavBarComponent() {
 					<i className="ri-arrow-right-s-line"></i>
 					About
 				</a>
-				<a href="/#">
+				<a href="/#Skills">
 					<i className="ri-arrow-right-s-line"></i>
 					Skills
 				</a>
