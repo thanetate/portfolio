@@ -4,23 +4,48 @@ import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import "./about.less";
 
+type bullets = {
+	bullet: string,
+};
+
+type experiences = {
+	id: number,
+	title: string,
+	company: string,
+	date: string,
+	bullets: bullets[],
+};
+
 const experiences = [
 	{
 		id: 3,
 		title: "Software Engineer",
 		company: "Fisher Investments",
 		date: "Aug 2025 - Present",
+		bullets: [
+			{}
+		]
 	},
 	{
 		id: 2,
 		title: "Software Engineer Intern",
 		company: "Fisher Investments",
 		date: "May - Aug 2025",
+		bullets: [
+			{ bullet: "Cut error response times by 30% using a unified Splunk dashboard." },
+			{ bullet: "Built end-to-end observability by integrating 500k+ daily logs from Azure Data Factory, REST APIs, and Dynatrace." },
+			{ bullet: "Cut error response times by 30% using a unified Splunk dashboard." },
+		]
+
 	},
 	{
 		id: 1,
 		title: "Freelance Web Developer",
 		date: "Mar 2025",
+		bullets: [
+			{ bullet: "Cut error response times by 30% using a unified Splunk dashboard." }
+		]
+
 	},
 ];
 

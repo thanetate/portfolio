@@ -64,7 +64,6 @@ function Skillspage() {
 						<div className="yellow-bubble">AWS</div>
 						<div className="yellow-bubble">Docker</div>
 						<div className="yellow-bubble">Azure Data Factory</div>
-						<div className="yellow-bubble">Apache Airflow</div>
 						<div className="yellow-bubble">Splunk</div>
 						<div className="yellow-bubble">Dynatrace</div>
 					</div>
