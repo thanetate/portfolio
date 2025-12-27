@@ -3,8 +3,15 @@ import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import { motion } from "framer-motion";
 import "./skills.less";
+import { useEffect } from "react";
 
 function Skillspage() {
+
+	useEffect(() => {
+		// Scroll to top whenever this page loads
+		window.scrollTo({ top: 0, behavior: "auto" });
+	}, []);
+
 	return (
 		<div className="skillspage-container">
 			<motion.div

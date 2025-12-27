@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import LineComponent from "../../components/line/line";
 import NavBarComponent from "../../components/navbar/navbar";
 import "./about.less";
+import { useEffect } from "react";
 
 type bullets = {
 	bullet: string,
@@ -49,6 +50,12 @@ const experiences = [
 ];
 
 function Aboutpage() {
+
+	useEffect(() => {
+		// Scroll to top whenever this page loads
+		window.scrollTo({ top: 0, behavior: "auto" });
+	}, []);
+
 	const experienceList = experiences.map((experience) => {
 		return (
 			<div key={experience.id}>
