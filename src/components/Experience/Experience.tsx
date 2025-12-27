@@ -1,20 +1,42 @@
+
+import { useEffect, useState } from "react";
 import "./experience.less";
 
 function ExperienceComponent() {
+	const [aboutHref, setAboutHref] = useState(
+		window.innerWidth >= 1000 ? "/#About" : "/about"
+	);
+
+	useEffect(() => {
+		const onResize = () => {
+			setAboutHref(window.innerWidth >= 1000 ? "/#About" : "/about");
+		};
+
+		window.addEventListener("resize", onResize);
+		return () => window.removeEventListener("resize", onResize);
+	}, []);
+
 	return (
 		<div className="experience-component-container">
 			<div className="currently">
 				<div className="title">Currently -</div>
-				<div className="experience">Software Engineer @ Fisher Investments</div>
+				<a href={aboutHref} className="experience">
+					Software Developer @ Fisher Investments
+				</a>
 			</div>
+
 			<div className="previously">
 				<div className="title">Previously -</div>
-				<div className="experience">
-					Software Engineer Intern @ Fisher Investments
-				</div>
-				<div className="experience">Freelance Web Developer</div>
+				<a href={aboutHref} className="experience">
+					Application Developer Intern @ Fisher Investments
+				</a>
+				<a href={aboutHref} className="experience">
+					Freelance Web Developer
+				</a>
 			</div>
 		</div>
 	);
 }
+
 export default ExperienceComponent;
+

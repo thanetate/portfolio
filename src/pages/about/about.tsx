@@ -19,22 +19,21 @@ type experiences = {
 const experiences = [
 	{
 		id: 3,
-		title: "Software Engineer",
+		title: "Junior Associate Application Developer",
 		company: "Fisher Investments",
 		date: "Aug 2025 - Present",
 		bullets: [
-			{}
 		]
 	},
 	{
 		id: 2,
-		title: "Software Engineer Intern",
+		title: "Application Developer Intern",
 		company: "Fisher Investments",
 		date: "May - Aug 2025",
 		bullets: [
 			{ bullet: "Cut error response times by 30% using a unified Splunk dashboard." },
 			{ bullet: "Built end-to-end observability by integrating 500k+ daily logs from Azure Data Factory, REST APIs, and Dynatrace." },
-			{ bullet: "Cut error response times by 30% using a unified Splunk dashboard." },
+			{ bullet: "Improved log visibility for 450+ pipelines by adding tracing for nested workflows." },
 		]
 
 	},
@@ -58,6 +57,11 @@ function Aboutpage() {
 					<div className="right">
 						<div className="e-title">{experience.title}</div>
 						<div className="e-company">{experience.company}</div>
+						<div className="e-bullets">
+							{experience.bullets.map((item, index) => (
+								<li key={index}>{item.bullet}</li>
+							))}
+						</div>
 					</div>
 					<div className="left">
 						<div className="e-date">{experience.date}</div>
