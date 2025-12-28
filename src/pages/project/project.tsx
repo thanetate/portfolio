@@ -1,12 +1,10 @@
 import { useParams } from "react-router-dom";
 import LineComponent from "../../components/line/line";
-import NavBarComponent from "../../components/navbar/navbar";
 import { motion } from "framer-motion";
 import "./project.less";
 import 'remixicon/fonts/remixicon.css';
 import FooterComponent from "../../components/footer/footer";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import { useMemo } from "react";
 
 function Projectpage() {
@@ -99,10 +97,6 @@ function Projectpage() {
 				exit={{ opacity: 0 }}
 				transition={{ duration: 1.3 }}
 			>
-
-				{/* <div className="navbar-container"> */}
-				{/* 	<NavBarComponent /> */}
-				{/* </div> */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}

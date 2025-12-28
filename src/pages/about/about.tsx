@@ -49,6 +49,7 @@ const experiences = [
 ];
 
 function Aboutpage() {
+
 	const experienceList = experiences.map((experience) => {
 		return (
 			<div key={experience.id}>

@@ -25,13 +25,6 @@
 
 	//home page
 	.home-container {
-		.leftright-container {
-			.leftside-container {
-				// added this
-				margin-bottom: 30px;
-			}
-		}
-
 		.head-container {
 			margin-top: @component-spacing;
 		}
@@ -44,7 +37,10 @@
 		.footer-container {
 			margin-top: 30px;
 		}
+	}
 
+	.leftside-container {
+		display: none;
 	}
 }
 
@@ -68,6 +64,17 @@
 		padding-top: 15px;
 		padding-bottom: 30px;
 		align-items: stretch;
+
+		//home page
+		.home-container {
+			.head-container {
+				display: none;
+			}
+
+			.experience-container {
+				display: none;
+			}
+		}
 
 		.navbar-container {
 			position: fixed;
