@@ -1,17 +1,9 @@
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
-import NavBarComponent from "../../components/navbar/navbar";
 import { motion } from "framer-motion";
 import "./skills.less";
-import { useEffect } from "react";
 
 function Skillspage() {
-
-	useEffect(() => {
-		// Scroll to top whenever this page loads
-		window.scrollTo({ top: 0, behavior: "auto" });
-	}, []);
-
 	return (
 		<div className="skillspage-container">
 			<motion.div
@@ -20,11 +12,6 @@ function Skillspage() {
 				exit={{ opacity: 0 }}
 				transition={{ duration: 1.3 }}
 			>
-
-
-				<div className="navbar-container">
-					<NavBarComponent />
-				</div>
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -67,10 +54,11 @@ function Skillspage() {
 					<LineComponent />
 					<div className="s-title">Tools</div>
 					<div className="bubbles-container">
-						<div className="yellow-bubble">Azure</div>
+						<div className="yellow-bubble">Microsoft Azure</div>
 						<div className="yellow-bubble">AWS</div>
 						<div className="yellow-bubble">Docker</div>
 						<div className="yellow-bubble">Azure Data Factory</div>
+						<div className="yellow-bubble">AutoXLR8</div>
 						<div className="yellow-bubble">Splunk</div>
 						<div className="yellow-bubble">Dynatrace</div>
 					</div>

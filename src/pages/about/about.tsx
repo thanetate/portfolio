@@ -1,7 +1,6 @@
 import FooterComponent from "../../components/footer/footer";
 import { motion } from "framer-motion";
 import LineComponent from "../../components/line/line";
-import NavBarComponent from "../../components/navbar/navbar";
 import "./about.less";
 import { useEffect } from "react";
 
@@ -50,12 +49,6 @@ const experiences = [
 ];
 
 function Aboutpage() {
-
-	useEffect(() => {
-		// Scroll to top whenever this page loads
-		window.scrollTo({ top: 0, behavior: "auto" });
-	}, []);
-
 	const experienceList = experiences.map((experience) => {
 		return (
 			<div key={experience.id}>
@@ -87,9 +80,9 @@ function Aboutpage() {
 				transition={{ duration: 1.3 }}
 			>
 
-				<div className="navbar-container">
-					<NavBarComponent />
-				</div>
+				{/* <div className="navbar-container"> */}
+				{/* 	<NavBarComponent /> */}
+				{/* </div> */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}

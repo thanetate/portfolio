@@ -6,8 +6,7 @@
 	display: flex;
 	flex-direction: column;
 
-	.leftright-container {}
-
+	//navbar
 	.navbar-container {
 		display: flex;
 		justify-content: center;
@@ -17,38 +16,47 @@
 		background-color: transparent;
 	}
 
-	.head-container {
-		margin-top: @component-spacing;
-
-	}
-
-	.experience-container {
-		margin-top: 20px;
-	}
-
+	// all of the pages
 	.rightside-container {
 		display: flex;
 		flex-direction: column;
-		margin-top: 30px;
 		gap: 30px;
+	}
 
-		// hide the about page
-		.hidden {
-			display: none;
+	//home page
+	.home-container {
+		.leftright-container {
+			.leftside-container {
+				// added this
+				margin-bottom: 30px;
+			}
 		}
+
+		.head-container {
+			margin-top: @component-spacing;
+		}
+
+		.experience-container {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.footer-container {
+			margin-top: 30px;
+		}
+
 	}
 }
 
 @media (min-width: 600px) {
 	.homepage-container {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 		align-items: center;
 
-		.leftright-container {
+		.rightside-container {
+			width: 100%;
 			max-width: 600px;
 		}
+
 	}
 }
 

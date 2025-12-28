@@ -7,16 +7,17 @@ import 'remixicon/fonts/remixicon.css';
 import FooterComponent from "../../components/footer/footer";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useMemo } from "react";
 
 function Projectpage() {
 	const { projectname } = useParams();
 	const location = useLocation();
 
-	// remove '#' and make lowercase
-	const hashProject = location.hash.replace("#", "").toLowerCase();
-
-	// Use route param if it exists, otherwise use hash
-	const resolvedProjectName = projectname?.toLowerCase() || hashProject;
+	const resolvedProjectName = useMemo(() => {
+		if (projectname) return projectname.toLowerCase();
+		if (location.hash) return location.hash.replace("#", "").toLowerCase();
+		return "";
+	}, [projectname, location.hash]);
 
 	type Skill = {
 		bubble: string,
@@ -90,11 +91,6 @@ function Projectpage() {
 		(project) => project.paramname.toLowerCase() === resolvedProjectName
 	);
 
-	useEffect(() => {
-		// Scroll to top whenever this page loads
-		window.scrollTo({ top: 0, behavior: "auto" });
-	}, []);
-
 	return (
 		<div className="projectpage-container">
 			<motion.div
@@ -104,9 +100,9 @@ function Projectpage() {
 				transition={{ duration: 1.3 }}
 			>
 
-				<div className="navbar-container">
-					<NavBarComponent />
-				</div>
+				{/* <div className="navbar-container"> */}
+				{/* 	<NavBarComponent /> */}
+				{/* </div> */}
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}

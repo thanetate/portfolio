@@ -1,20 +1,6 @@
 @import "../../styles.less";
 
 .skillspage-container {
-	padding: @page-margin;
-	padding-top: 0; //to offset the sticky navbar padding
-	display: flex;
-	flex-direction: column;
-
-	.navbar-container {
-		display: flex;
-		justify-content: center;
-		position: sticky;
-		top: 0;
-		padding-top: 15px;
-		background-color: transparent;
-	}
-
 	.title {
 		margin-top: @component-spacing-large;
 		font-size: @fontsize-phone-medium;
@@ -90,12 +76,5 @@
 
 	.footer-container {
 		margin-top: 90px;
-	}
-}
-
-@media (min-width: 600px) {
-	.skillspage-container {
-		max-width: 600px;
-		margin: 0 auto;
 	}
 }

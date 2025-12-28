@@ -1,18 +1,6 @@
 @import '../../styles.less';
 
 .aboutpage-container {
-	padding: @page-margin;
-	padding-top: 0; //to offset the sticky navbar padding
-
-	.navbar-container {
-		display: flex;
-		justify-content: center;
-		position: sticky;
-		top: 0;
-		padding-top: 15px;
-		background-color: transparent;
-	}
-
 	.title {
 		margin-top: @component-spacing-large;
 		font-size: @fontsize-phone-medium;
@@ -90,11 +78,8 @@
 			li {
 				color: @text-02;
 				font-size: @fontsize-phone-small;
-				// list-style: none;
 			}
 		}
-
-
 	}
 
 	.education-container {
@@ -134,14 +119,5 @@
 			color: @text-02;
 			font-size: @fontsize-phone-xsmall;
 		}
-	}
-
-
-}
-
-@media (min-width: 600px) {
-	.aboutpage-container {
-		max-width: 600px;
-		margin: 0 auto;
 	}
 }

@@ -5,17 +5,6 @@ function NavBarComponent() {
 	return (
 		<>
 			<div className="navbar-component-container">
-				<a href="/">
-					Work
-				</a>
-				<a href="/about">
-					About
-				</a>
-				<a href="/skills">
-					Skills
-				</a>
-			</div>
-			<div className="navbar-component-container2">
 				<a href="/#">
 					<i className="ri-arrow-right-s-line"></i>
 					Work

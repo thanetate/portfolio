@@ -12,28 +12,10 @@
 		background-color: transparent;
 		cursor: pointer;
 		color: @text-01;
-	}
-}
-
-.navbar-component-container2 {
-	display: none;
-	flex-direction: row;
-	gap: 25px;
-	background-color: transparent;
-	font-size: @fontsize-phone-small;
-
-	a {
-		text-decoration: none;
-		background-color: transparent;
-		cursor: pointer;
-		color: @text-01;
 		transition: transform 0.3s ease;
 
 	}
 
-	a:hover {
-		transform: translateX(10%);
-	}
 
 	i {
 		display: none;
@@ -42,11 +24,8 @@
 }
 
 @media (min-width: 1000px) {
-	.navbar-component-container {
-		display: none;
-	}
 
-	.navbar-component-container2 {
+	.navbar-component-container {
 		display: flex;
 		flex-direction: column;
 
@@ -60,11 +39,16 @@
 
 		}
 
+		a:hover {
+			transform: translateX(10%);
+		}
+
+
 	}
 }
 
 @media (min-width: 1500px) {
-	.navbar-component-container2 {
+	.navbar-component-container {
 		margin-top: 30px;
 		font-size: @fontsize-phone-medium;
 	}

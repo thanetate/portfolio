@@ -1,18 +1,6 @@
 @import '../../styles.less';
 
 .projectpage-container {
-	padding: @page-margin;
-	padding-top: 0; //to offset the sticky navbar padding
-
-	.navbar-container {
-		display: flex;
-		justify-content: center;
-		position: sticky;
-		top: 0;
-		padding-top: 15px;
-		background-color: transparent;
-	}
-
 	.s-title {
 		margin-top: @component-spacing-large;
 		font-size: @fontsize-phone-small;
@@ -127,12 +115,5 @@
 	.demo-image {
 		max-width: 100%;
 		margin-top: 15px;
-	}
-}
-
-@media (min-width: 600px) {
-	.projectpage-container {
-		max-width: 600px;
-		margin: 0 auto;
 	}
 }

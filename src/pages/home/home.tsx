@@ -27,14 +27,6 @@ function Homepage() {
 		return () => window.removeEventListener("hashchange", handleHashChange);
 	}, []);
 
-	// scroll back to top
-	useEffect(() => {
-		if (activeSection) {
-			window.scrollTo({ top: 0, behavior: "smooth" });
-		}
-	}, [activeSection]);
-
-
 	return (
 		<div className="homepage-container">
 			<motion.div
@@ -47,60 +39,60 @@ function Homepage() {
 					<NavBarComponent />
 				</div>
 
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5, ease: "easeOut" }}
-					className="bg-white p-6 rounded-lg shadow-md"
-				>
-					<div className="leftright-container">
-						<div className="leftside-container">
-							<div className="head-container">
-								<HeadComponent />
-							</div>
-							<div className="experience-container">
-								<ExperienceComponent />
-							</div>
-						</div>
-						<div className="rightside-container">
-							{!activeSection && (
-								<>
+				<div className="leftright-container">
+					<div className="rightside-container">
+						{!activeSection && (
+							<motion.div
+								initial={{ opacity: 0, y: 20 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.5, ease: "easeOut" }}
+								className="bg-white p-6 rounded-lg shadow-md"
+							>
+								<div className="home-container">
+									<div className="leftside-container">
+										<div className="head-container">
+											<HeadComponent />
+										</div>
+										<div className="experience-container">
+											<ExperienceComponent />
+										</div>
+									</div>
+
+
 									<a className="projects-container">
 										<ProjectsComponent />
 									</a>
-									<a className="footer-container">
+									<div className="footer-container">
 										<LineComponent />
 										<FooterComponent />
-									</a>
+									</div>
+								</div>
+							</motion.div>
+						)}
+						{activeSection === "#About" && (
+							<div className="about-container">
+								<Aboutpage />
+							</div>
+						)}
+						{activeSection === "#Skills" && (
+							<div className="skills-container">
+								<Skillspage />
+							</div>
+						)}
+						{activeSection === "#Mapo" && (
+							<div className="project-container">
+								<Projectpage />
+							</div>
+						)}
+						{activeSection === "#Theory" && (
+							<div className="project-container">
+								<Projectpage />
+							</div>
+						)}
 
-								</>
-							)}
-							{activeSection === "#About" && (
-								<div className="about-container">
-									<Aboutpage />
-								</div>
-							)}
-							{activeSection === "#Skills" && (
-								<div className="skills-container">
-									<Skillspage />
-								</div>
-							)}
-							{activeSection === "#Mapo" && (
-								<div className="project-container">
-									<Projectpage />
-								</div>
-							)}
-							{activeSection === "#Theory" && (
-								<div className="project-container">
-									<Projectpage />
-								</div>
-							)}
-
-						</div>
 					</div>
-				</motion.div>
+				</div>
 			</motion.div>
-
 		</div >
 	);
 }
