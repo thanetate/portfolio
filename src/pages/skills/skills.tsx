@@ -61,6 +61,7 @@ function Skillspage() {
 						<div className="yellow-bubble">AutoXLR8</div>
 						<div className="yellow-bubble">Splunk</div>
 						<div className="yellow-bubble">Dynatrace</div>
+						<div className="yellow-bubble">Figma</div>
 					</div>
 					<div className="footer-container">
 						<LineComponent />

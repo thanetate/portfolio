@@ -21,7 +21,7 @@ function ExperienceComponent() {
 			<div className="currently">
 				<div className="title">Currently -</div>
 				<a href={aboutHref} className="experience">
-					Software Developer @ Fisher Investments
+					Application Developer @ Fisher Investments
 				</a>
 			</div>
 
