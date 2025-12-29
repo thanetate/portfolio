@@ -31,9 +31,9 @@ const experiences = [
 		],
 		bubbles: [
 			{ bubble: "Python" },
-			{ bubble: "Microsoft SQL Server" },
-			{ bubble: "Microsoft Azure" },
+			{ bubble: "Azure" },
 			{ bubble: "Azure Data Factory" },
+			{ bubble: "Microsoft SQL Server" },
 			{ bubble: "AutoXLR8" },
 		]
 	},
@@ -121,8 +121,8 @@ function Aboutpage() {
 					<div className="content">
 						Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about Microsoft Azure and how front-, middle-, and back-office systems operate in the finance space.
 					</div>
-					{/* <div className="title two"> Education </div> */}
-					{/* <LineComponent /> */}
+					<div className="title-two">Education </div>
+					<LineComponent />
 					<div className="education-container">
 						<div className="rightleft-container">
 							<div className="right">
@@ -135,7 +135,8 @@ function Aboutpage() {
 							</div>
 						</div>
 					</div>
-					{/* <div className="title two">Work Experience</div> */}
+					<div className="title-two">Work Experience</div>
+					<LineComponent />
 					<div className="experience-container">{experienceList}</div>
 					<LineComponent />
 					<FooterComponent />

@@ -103,7 +103,6 @@ function Projectpage() {
 					transition={{ duration: 0.5, ease: "easeOut" }}
 					className="bg-white p-6 rounded-lg shadow-md"
 				>
-
 					<div className="s-title">Project Details</div>
 					<div className="title">{currentProject?.name}</div>
 					<LineComponent />
