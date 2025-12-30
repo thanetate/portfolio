@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
-import LineComponent from "../../components/line/line";
-import { motion } from "framer-motion";
-import "./project.less";
-import 'remixicon/fonts/remixicon.css';
 import FooterComponent from "../../components/footer/footer";
+import LineComponent from "../../components/line/line";
+import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useMemo } from "react";
+import 'remixicon/fonts/remixicon.css';
+import "./project.less";
 
 function Projectpage() {
 	const { projectname } = useParams();
@@ -92,96 +92,87 @@ function Projectpage() {
 	return (
 		<div className="projectpage-container">
 			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				transition={{ duration: 1.3 }}
+				initial={{ opacity: 0, y: 20 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, ease: "easeOut" }}
+				className="bg-white p-6 rounded-lg shadow-md"
 			>
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5, ease: "easeOut" }}
-					className="bg-white p-6 rounded-lg shadow-md"
-				>
-					<div className="s-title">Project Details</div>
-					<div className="title">{currentProject?.name}</div>
-					<LineComponent />
+				<div className="s-title">Project Details</div>
+				<div className="title">{currentProject?.name}</div>
+				<LineComponent />
 
-					{currentProject ? (
-						<div className="project-info">
-							<div className="description1">{currentProject.description1}</div>
-							<div className="description2">{currentProject.description2}</div>
-							<div className="box-container">
-								<LineComponent />
-								<div className="skills-container">
-									<div className="tech">Tech</div>
-									<div className="bubbles-container">
-										{currentProject.skills.map((skill: Skill, index: number) => (
-											<div key={index} className="green-bubble">
-												{skill.bubble}
-											</div>
-										))}
-									</div>
-								</div>
-								{currentProject?.team && (
-									<>
-										<LineComponent />
-										<div className="block-container">
-											<div className="block-title">Team</div>
-											<div className="block-info">{currentProject?.team}</div>
-										</div>
-									</>
-								)}
-								<LineComponent />
-								<div className="block-container">
-									<div className="block-title">Github</div>
-									<div className="block-info">
-										{/* target _blank opens a new tab, rel noopener is for security best practices	 */}
-										<a href={currentProject.github} target="_blank" rel="noopener noreferrer" className="link-a">View
-											<i className="ri-arrow-right-line"></i>
-										</a>
-									</div>
-								</div>
-								<LineComponent />
-								<div className="block-container">
-									<div className="block-title">Live Project</div>
-									<div className="block-info">
-										{/* target _blank opens a new tab, rel noopener is for security best practices	 */}
-										<a href={currentProject.live} target="_blank" rel="noopener noreferrer" className="link-a">View
-											<i className="ri-arrow-right-line"></i>
-										</a>
-									</div>
-
-								</div>
-								<LineComponent />
-								<video
-									src={currentProject?.demo}
-									autoPlay
-									loop
-									muted
-									playsInline
-									className="demo"
-								/>
-								<div className="demo-image-container">
-									{currentProject.image.map((image: Demo, index: number) => (
-										<div key={index} >
-											<img src={image.image} className="demo-image"></img>
+				{currentProject ? (
+					<div className="project-info">
+						<div className="description1">{currentProject.description1}</div>
+						<div className="description2">{currentProject.description2}</div>
+						<div className="box-container">
+							<LineComponent />
+							<div className="skills-container">
+								<div className="tech">Tech</div>
+								<div className="bubbles-container">
+									{currentProject.skills.map((skill: Skill, index: number) => (
+										<div key={index} className="green-bubble">
+											{skill.bubble}
 										</div>
 									))}
 								</div>
-								<LineComponent />
-								<FooterComponent />
 							</div>
+							{currentProject?.team && (
+								<>
+									<LineComponent />
+									<div className="block-container">
+										<div className="block-title">Team</div>
+										<div className="block-info">{currentProject?.team}</div>
+									</div>
+								</>
+							)}
+							<LineComponent />
+							<div className="block-container">
+								<div className="block-title">Github</div>
+								<div className="block-info">
+									{/* target _blank opens a new tab, rel noopener is for security best practices	 */}
+									<a href={currentProject.github} target="_blank" rel="noopener noreferrer" className="link-a">View
+										<i className="ri-arrow-right-line"></i>
+									</a>
+								</div>
+							</div>
+							<LineComponent />
+							<div className="block-container">
+								<div className="block-title">Live Project</div>
+								<div className="block-info">
+									{/* target _blank opens a new tab, rel noopener is for security best practices	 */}
+									<a href={currentProject.live} target="_blank" rel="noopener noreferrer" className="link-a">View
+										<i className="ri-arrow-right-line"></i>
+									</a>
+								</div>
+
+							</div>
+							<LineComponent />
+							<video
+								src={currentProject?.demo}
+								autoPlay
+								loop
+								muted
+								playsInline
+								className="demo"
+							/>
+							<div className="demo-image-container">
+								{currentProject.image.map((image: Demo, index: number) => (
+									<div key={index} >
+										<img src={image.image} className="demo-image"></img>
+									</div>
+								))}
+							</div>
+							<LineComponent />
+							<FooterComponent />
 						</div>
-					) : (
-						<p>Project not found.</p>
-					)
-					}
-					{/* <FooterComponent /> */}
-				</motion.div >
-			</motion.div>
+					</div>
+				) : (
+					<p>Project not found.</p>
+				)
+				}
+			</motion.div >
 		</div >
 	)
 }
-
 export default Projectpage;

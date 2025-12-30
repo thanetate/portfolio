@@ -109,8 +109,8 @@
 				display: flex;
 				justify-content: flex-end;
 				margin-top: 45px;
-				margin-left: 50%;
-				width: 50%;
+				margin-left: auto;
+				max-width: 50%;
 
 				// about page
 				.about-container {
@@ -124,15 +124,6 @@
 						.title {
 							margin-top: 0px;
 						}
-
-						// smaller titles
-						.two {
-							margin-top: 60px;
-						}
-
-						.experience-container {
-							margin-bottom: 60px;
-						}
 					}
 				}
 
@@ -140,6 +131,7 @@
 				.skills-container {
 					.skillspage-container {
 						padding: 0px;
+						min-height: calc(100vh - 100px);
 
 						.navbar-container {
 							display: none;
@@ -181,140 +173,146 @@
 			margin-top: 345px;
 		}
 
+		.leftright-container {
+			.rightside-container {
 
-		// about page
-		.about-container {
-			.aboutpage-container {
-				.title {
-					font-size: @fontsize-phone-large;
-				}
+				// about page
+				.about-container {
+					.aboutpage-container {
+						.title {
+							font-size: @fontsize-phone-large;
+						}
 
-				.content {
-					font-size: @fontsize-phone-medium;
-				}
+						.content {
+							font-size: @fontsize-phone-medium;
+						}
 
-				.title-two {
-					font-size: @fontsize-phone-medium;
-				}
+						.title-two {
+							font-size: @fontsize-phone-medium;
+						}
 
-				.experience-container {
-					.e-title {
-						font-size: @fontsize-phone-medium;
+						.experience-container {
+							.e-title {
+								font-size: @fontsize-phone-medium;
+							}
+
+
+							.e-company {
+								font-size: @fontsize-phone-medium;
+							}
+
+							.e-date {
+								font-size: @fontsize-phone-small;
+							}
+
+							.green-bubble {
+								font-size: @fontsize-phone-small;
+							}
+						}
+
+						.education-container {
+							.e-title {
+								font-size: @fontsize-phone-medium;
+							}
+
+							.e-company {
+								font-size: @fontsize-phone-medium;
+							}
+
+							.e-date {
+								font-size: @fontsize-phone-small;
+							}
+
+						}
+
+						.e-bullets {
+							li {
+								font-size: @fontsize-phone-medium;
+							}
+						}
 					}
+				}
 
+				// skills page
+				.skills-container {
+					.skillspage-container {
+						min-height: calc(100vh - 130px);
 
-					.e-company {
-						font-size: @fontsize-phone-medium;
+						.title {
+							font-size: @fontsize-phone-large;
+						}
+
+						.s-title {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.blue-bubble {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.green-bubble {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.purple-bubble {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.red-bubble {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.yellow-bubble {
+							font-size: @fontsize-phone-medium;
+						}
 					}
+				}
 
-					.e-date {
-						font-size: @fontsize-phone-small;
+				// project page
+				.project-container {
+					.projectpage-container {
+						.s-title {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.title {
+							font-size: @fontsize-phone-large;
+						}
+
+						.description1 {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.description2 {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.box-container {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.tech {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.green-bubble {
+							font-size: @fontsize-phone-small;
+						}
+
+						.block-title {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.block-info {
+							font-size: @fontsize-phone-medium;
+						}
+
+						.link-a {
+							font-size: @fontsize-phone-medium;
+						}
+
 					}
-
-					.green-bubble {
-						font-size: @fontsize-phone-small;
-					}
 				}
-
-				.education-container {
-					.e-title {
-						font-size: @fontsize-phone-medium;
-					}
-
-					.e-company {
-						font-size: @fontsize-phone-medium;
-					}
-
-					.e-date {
-						font-size: @fontsize-phone-small;
-					}
-
-				}
-
-				.e-bullets {
-					li {
-						font-size: @fontsize-phone-medium;
-					}
-				}
-			}
-		}
-
-		// skills page
-		.skills-container {
-			.skillspage-container {
-				.title {
-					font-size: @fontsize-phone-large;
-				}
-
-				.s-title {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.blue-bubble {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.green-bubble {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.purple-bubble {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.red-bubble {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.yellow-bubble {
-					font-size: @fontsize-phone-medium;
-				}
-			}
-		}
-
-		// project page
-		.project-container {
-			.projectpage-container {
-				.s-title {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.title {
-					font-size: @fontsize-phone-large;
-				}
-
-				.description1 {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.description2 {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.box-container {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.tech {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.green-bubble {
-					font-size: @fontsize-phone-small;
-				}
-
-				.block-title {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.block-info {
-					font-size: @fontsize-phone-medium;
-				}
-
-				.link-a {
-					font-size: @fontsize-phone-medium;
-				}
-
 			}
 		}
 	}

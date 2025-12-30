@@ -1,80 +1,93 @@
 @import "../../styles.less";
 
 .skillspage-container {
-	.title {
-		margin-top: @component-spacing-large;
-		font-size: @fontsize-phone-medium;
-		color: @text-01;
-		margin-bottom: 15px;
-	}
+	display: flex;
+	min-height: calc(100vh - 55px);
 
-	.s-title {
-		font-size: @fontsize-phone-small;
-		color: @text-02;
-	}
-
-	.s-title {}
-
-	.bubbles-container {
-		margin-top: 10px;
-		margin-bottom: 15px;
+	.skills-layout {
+		min-height: 100%;
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 10px;
+		flex-direction: column;
 	}
 
-	.blue-bubble {
-		font-size: @fontsize-phone-small;
-		padding: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 100px;
-		background-color: #1e3356;
-		color: #3b81f6;
-	}
+	.skillspage-inner-container {
+		flex: 1;
 
-	.green-bubble {
-		font-size: @fontsize-phone-small;
-		padding: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 100px;
-		background-color: #1c4829;
-		color: #21c55d;
-	}
+		.title {
+			margin-top: @component-spacing-large;
+			font-size: @fontsize-phone-medium;
+			color: @text-01;
+			margin-bottom: 15px;
+		}
 
-	.purple-bubble {
-		font-size: @fontsize-phone-small;
-		padding: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 100px;
-		background-color: #3e2657;
-		color: #a854f7;
-	}
+		.s-title {
+			font-size: @fontsize-phone-small;
+			color: @text-02;
+		}
 
-	.red-bubble {
-		font-size: @fontsize-phone-small;
-		padding: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 100px;
-		background-color: #552221;
-		color: #ef4444;
-	}
+		.s-title {}
 
-	.yellow-bubble {
-		font-size: @fontsize-phone-small;
-		padding: 5px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 100px;
-		background-color: #524218;
-		color: #e9b207;
+		.bubbles-container {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.blue-bubble {
+			font-size: @fontsize-phone-small;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #1e3356;
+			color: #3b81f6;
+		}
+
+		.green-bubble {
+			font-size: @fontsize-phone-small;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #1c4829;
+			color: #21c55d;
+		}
+
+		.purple-bubble {
+			font-size: @fontsize-phone-small;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #3e2657;
+			color: #a854f7;
+		}
+
+		.red-bubble {
+			font-size: @fontsize-phone-small;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #552221;
+			color: #ef4444;
+		}
+
+		.yellow-bubble {
+			font-size: @fontsize-phone-small;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #524218;
+			color: #e9b207;
+		}
 	}
 
 	.footer-container {
-		margin-top: 90px;
+		margin-top: 15px;
 	}
 }

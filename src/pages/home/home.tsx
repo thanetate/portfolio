@@ -42,76 +42,63 @@ function Homepage() {
 			<div className="navbar-container">
 				<NavBarComponent />
 			</div>
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				transition={{ duration: 1.3 }}
-			>
-
-				<div className="leftright-container">
-					<div className="leftside-container">
-						<div className="head-container">
-							<HeadComponent />
-						</div>
-						<div className="experience-container">
-							<ExperienceComponent />
-						</div>
+			<div className="leftright-container">
+				<div className="leftside-container">
+					<div className="head-container">
+						<HeadComponent />
 					</div>
-
-					<div className="rightside-container">
-						{!activeSection && (
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5, ease: "easeOut" }}
-								className="bg-white p-6 rounded-lg shadow-md"
-							>
-								<div className="home-container">
-									<div className="head-container">
-										<HeadComponent />
-									</div>
-									<div className="experience-container">
-										<ExperienceComponent />
-									</div>
-
-
-									<a className="projects-container">
-										<ProjectsComponent />
-									</a>
-									<div className="footer-container">
-										<LineComponent />
-										<FooterComponent />
-									</div>
-								</div>
-							</motion.div>
-						)}
-						{activeSection === "#About" && (
-							<div className="about-container">
-								<Aboutpage />
-							</div>
-						)}
-						{activeSection === "#Skills" && (
-							<div className="skills-container">
-								<Skillspage />
-							</div>
-						)}
-						{activeSection === "#Mapo" && (
-							<div className="project-container">
-								<Projectpage />
-							</div>
-						)}
-						{activeSection === "#Theory" && (
-							<div className="project-container">
-								<Projectpage />
-							</div>
-						)}
-
+					<div className="experience-container">
+						<ExperienceComponent />
 					</div>
 				</div>
-			</motion.div>
+				<div className="rightside-container">
+					{!activeSection && (
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, ease: "easeOut" }}
+							className="bg-white p-6 rounded-lg shadow-md"
+						>
+							<div className="home-container">
+								<div className="head-container">
+									<HeadComponent />
+								</div>
+								<div className="experience-container">
+									<ExperienceComponent />
+								</div>
+								<a className="projects-container">
+									<ProjectsComponent />
+								</a>
+								<div className="footer-container">
+									<LineComponent />
+									<FooterComponent />
+								</div>
+							</div>
+						</motion.div>
+					)}
+					{activeSection === "#About" && (
+						<div className="about-container">
+							<Aboutpage />
+						</div>
+					)}
+					{activeSection === "#Skills" && (
+						<div className="skills-container">
+							<Skillspage />
+						</div>
+					)}
+					{activeSection === "#Mapo" && (
+						<div className="project-container">
+							<Projectpage />
+						</div>
+					)}
+					{activeSection === "#Theory" && (
+						<div className="project-container">
+							<Projectpage />
+						</div>
+					)}
+				</div>
+			</div>
 		</div >
 	);
 }
-
 export default Homepage;

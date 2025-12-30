@@ -9,7 +9,7 @@
 	}
 
 	.title-two {
-		margin-top: 60px;
+		margin-top: 30px;
 		font-size: @fontsize-phone-small;
 		color: @text-02;
 		margin-bottom: 15px;
@@ -20,7 +20,7 @@
 		margin-top: 15px;
 		color: @text-02;
 		font-size: @fontsize-phone-small;
-		line-height: 2;
+		line-height: 1.6;
 	}
 
 	mark {
@@ -28,15 +28,61 @@
 	}
 
 	br {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
+
+	.education-container {
+		.rightleft-container {
+			display: flex;
+			flex-direction: row;
+			margin-top: 5px;
+			margin-bottom: 15px;
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				width: 150%;
+			}
+
+			.left {
+				display: flex;
+				justify-content: flex-end;
+				width: 50%;
+			}
+		}
+
+		.e-title {
+			color: @text-01;
+			font-size: @fontsize-phone-small;
+
+		}
+
+		.e-company {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 10px;
+		}
+
+		.e-minor {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 5px;
+
+		}
+
+		.e-date {
+			color: @text-02;
+			font-size: @fontsize-phone-xsmall;
+		}
+	}
+
 
 	.experience-container {
 		display: flex;
 		flex-direction: column;
-		gap: 15px;
 
 		.rightleft-container {
+			margin-top: 5px;
 			display: flex;
 			flex-direction: row;
 
@@ -59,13 +105,11 @@
 			font-size: @fontsize-phone-small;
 		}
 
-
 		.e-company {
 			color: @text-02;
 			font-size: @fontsize-phone-small;
-			margin-bottom: 10px;
 			margin-top: 5px;
-
+			margin-bottom: 10px;
 		}
 
 		.e-date {
@@ -78,17 +122,17 @@
 			flex-direction: column;
 			gap: 5px;
 			margin-left: 11px;
-			line-height: 1.5;
 
 			li {
 				color: @text-02;
 				font-size: @fontsize-phone-small;
+				line-height: 1.6;
 			}
 		}
 
 		.bubbles-container {
 			margin-top: 10px;
-			margin-bottom: 15px;
+			margin-bottom: 30px;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -107,42 +151,4 @@
 
 	}
 
-	.education-container {
-		.rightleft-container {
-			display: flex;
-			flex-direction: row;
-			margin-top: 15px;
-			margin-bottom: 15px;
-
-			.right {
-				display: flex;
-				flex-direction: column;
-				width: 150%;
-			}
-
-			.left {
-				display: flex;
-				justify-content: flex-end;
-				width: 50%;
-			}
-		}
-
-		.e-title {
-			color: @text-01;
-			font-size: @fontsize-phone-small;
-			margin-bottom: 5px;
-		}
-
-
-		.e-company {
-			color: @text-02;
-			font-size: @fontsize-phone-small;
-			margin-top: 2.5px;
-		}
-
-		.e-date {
-			color: @text-02;
-			font-size: @fontsize-phone-xsmall;
-		}
-	}
 }

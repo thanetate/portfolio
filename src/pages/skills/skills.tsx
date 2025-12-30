@@ -7,18 +7,13 @@ function Skillspage() {
 	return (
 		<div className="skillspage-container">
 			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				transition={{ duration: 1.3 }}
+				initial={{ opacity: 0, y: 20 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, ease: "easeOut" }}
+				className="skills-layout bg-white p-6 rounded-lg shadow-md"
 			>
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5, ease: "easeOut" }}
-					className="bg-white p-6 rounded-lg shadow-md"
-				>
 
+				<div className="skillspage-inner-container">
 					<div className="title">Skills</div>
 					<LineComponent />
 					<div className="s-title">Languages</div>
@@ -63,14 +58,13 @@ function Skillspage() {
 						<div className="yellow-bubble">Docker</div>
 						<div className="yellow-bubble">Figma</div>
 					</div>
-					<div className="footer-container">
-						<LineComponent />
-						<FooterComponent />
-					</div>
-				</motion.div>
+				</div>
+				<div className="footer-container">
+					<LineComponent />
+					<FooterComponent />
+				</div>
 			</motion.div>
 		</div>
 	);
 }
-
 export default Skillspage;
