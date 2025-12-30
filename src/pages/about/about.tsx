@@ -27,10 +27,9 @@ const experiences = [
 		company: "Fisher Investments",
 		date: "Aug 2025 - Present",
 		bullets: [
-			{ bullet: "Developed a foundational understanding of wealth management principles by working within the Portfolio Management Group (PMG) to trace data flows across Front Office (CRD), Middle Office (GWP), and Back Office (Sylvan, Vision) systems." }
+			{ bullet: "Maintained and tested cash workflow pipelines in Azure Data Factory using AutoXLR8 (Velocity Investment Solutions), gaining hands-on experience with cash operations and data processing." },
 		],
 		bubbles: [
-			{ bubble: "Python" },
 			{ bubble: "Azure" },
 			{ bubble: "Azure Data Factory" },
 			{ bubble: "Microsoft SQL Server" },
@@ -43,13 +42,13 @@ const experiences = [
 		company: "Fisher Investments",
 		date: "May - Aug 2025",
 		bullets: [
-			{ bullet: "Reduced error response times by 30% across various systems supporting $300B+ in assets through a unified Splunk dashboard. " },
-			{ bullet: "Built end-to-end observability by integrating 500k+ daily logs from Azure Data Factory (ADF), REST APIs, and Dynatrace." },
-			{ bullet: "Assisted in efforts to improve log visibility for 450 + integration pipelines by introducing tracing for nested pipelines." },
+			{ bullet: "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace." },
+			{ bullet: "Gained foundational knowledge of wealth management principles by tracing data flows across Front Office (Salesforce, Charles River IMS), Middle Office (Global Wealth Platform), and Back Office (Sylvan, Vision) systems." },
 		],
 		bubbles: [
 			{ bubble: "Splunk" },
 			{ bubble: "Dynatrace" },
+			{ bubble: "Azure" },
 			{ bubble: "Azure Data Factory" },
 			{ bubble: "Microsoft SQL Server" },
 		]
@@ -59,8 +58,8 @@ const experiences = [
 		title: "Freelance Web Developer",
 		date: "Mar 2025",
 		bullets: [
-			{ bullet: "Improved user engagement by 30% through developing a fully responsive, image-optimized site for a photography student. " },
-			{ bullet: "Boosted organic search traffic by 100+ visits in the first month and improved Google keyword rankings by optimizing for SEO." }
+			{ bullet: "Built a fully responsive, image-optimized website for a photography student, improving user experience and engagement." },
+			{ bullet: "Optimized the site for SEO, enhancing visibility and search performance." }
 		],
 		bubbles: [
 			{ bubble: "React" },
