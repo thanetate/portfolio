@@ -3,7 +3,7 @@ import LineComponent from "../../components/line/line";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import 'remixicon/fonts/remixicon.css';
 import "./project.less";
 
@@ -88,6 +88,14 @@ function Projectpage() {
 	const currentProject = projects.find(
 		(project) => project.paramname.toLowerCase() === resolvedProjectName
 	);
+
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			behavior: "auto",
+		});
+	}, []);
+
 
 	return (
 		<div className="projectpage-container">

@@ -1,9 +1,18 @@
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import "./skills.less";
 
 function Skillspage() {
+
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			behavior: "auto",
+		});
+	}, []);
+
 	return (
 		<div className="skillspage-container">
 			<motion.div

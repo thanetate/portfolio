@@ -1,5 +1,6 @@
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./about.less";
 
@@ -27,7 +28,7 @@ const experiences = [
 		company: "Fisher Investments",
 		date: "Aug 2025 - Present",
 		bullets: [
-			{ bullet: "Maintained and tested cash workflow pipelines in Azure Data Factory using AutoXLR8 (Velocity Investment Solutions), gaining hands-on experience with cash operations and data processing." },
+			{ bullet: "Maintained and tested cash pipelines in Azure Data Factory using AutoXLR8 (Velocity Investment Solutions), gaining exposure to cash operations and trading workflows." },
 		],
 		bubbles: [
 			{ bubble: "Azure" },
@@ -43,7 +44,7 @@ const experiences = [
 		date: "May - Aug 2025",
 		bullets: [
 			{ bullet: "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace." },
-			{ bullet: "Gained foundational knowledge of wealth management principles by tracing data flows across Front Office (Salesforce, Charles River IMS), Middle Office (Global Wealth Platform), and Back Office (Sylvan, Vision) systems." },
+			{ bullet: "Gained foundational knowledge of wealth management principles by tracing workflows across Front Office (Salesforce, Charles River IMS), Middle Office (Global Wealth Platform), and Back Office (Sylvan, Vision) systems." },
 		],
 		bubbles: [
 			{ bubble: "Splunk" },
@@ -58,8 +59,7 @@ const experiences = [
 		title: "Freelance Web Developer",
 		date: "Mar 2025",
 		bullets: [
-			{ bullet: "Built a fully responsive, image-optimized website for a photography student, improving user experience and engagement." },
-			{ bullet: "Optimized the site for SEO, enhancing visibility and search performance." }
+			{ bullet: "Built a responsive, image-optimized, SEO-friendly website for a photography student, improving user experience and search visibility." },
 		],
 		bubbles: [
 			{ bubble: "React" },
@@ -70,6 +70,13 @@ const experiences = [
 ];
 
 function Aboutpage() {
+
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			behavior: "auto",
+		});
+	}, []);
 
 	const experienceList = experiences.map((experience) => {
 		return (
@@ -111,7 +118,7 @@ function Aboutpage() {
 				<div className="title">About Me</div>
 				<LineComponent />
 				<div className="content">
-					Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about Microsoft Azure and how front-, middle-, and back-office systems operate in the finance space.
+					Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about Microsoft Azure and how front, middle, and back office systems operate in the finance space.
 				</div>
 				<div className="title-two">Education </div>
 				<LineComponent />

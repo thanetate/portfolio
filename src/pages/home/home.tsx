@@ -14,6 +14,13 @@ import "./home.less";
 function Homepage() {
 	const [activeSection, setActiveSection] = useState<string>("");
 
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			behavior: "auto",
+		});
+	}, []);
+
 	// runs once on mount bc of []
 	useEffect(() => {
 		// reads current url
@@ -26,16 +33,6 @@ function Homepage() {
 		window.addEventListener("hashchange", handleHashChange);
 		return () => window.removeEventListener("hashchange", handleHashChange);
 	}, []);
-
-	// scroll to top on load
-	useEffect(() => {
-		if (activeSection) {
-			window.scrollTo({
-				top: 0,
-				behavior: "auto", // or "auto" if you prefer instant
-			});
-		}
-	}, [activeSection]);
 
 	return (
 		<div className="homepage-container">
