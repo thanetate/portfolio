@@ -1,4 +1,4 @@
-import "./Head.less";
+import "./head.less";
 
 function HeadComponent() {
 	return (
