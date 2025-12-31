@@ -1,0 +1,153 @@
+@import '../../styles.less';
+
+.aboutpage-container {
+	.title {
+		margin-top: @component-spacing-large;
+		font-size: @fontsize-phone-medium;
+		color: @text-01;
+		margin-bottom: 15px;
+	}
+
+	.title-two {
+		margin-top: 30px;
+		font-size: @fontsize-phone-small;
+		color: @text-02;
+		margin-bottom: 15px;
+	}
+
+	.content {
+		color: @text-02;
+		font-size: @fontsize-phone-small;
+		line-height: 2;
+	}
+
+	mark {
+		color: @text-01;
+	}
+
+	br {
+		margin-bottom: 5px;
+	}
+
+	.education-container {
+		.rightleft-container {
+			display: flex;
+			flex-direction: row;
+			margin-top: 20px;
+			margin-bottom: 15px;
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				width: 150%;
+			}
+
+			.left {
+				display: flex;
+				justify-content: flex-end;
+				width: 50%;
+			}
+		}
+
+		.e-title {
+			color: @text-01;
+			font-size: @fontsize-phone-small;
+
+		}
+
+		.e-company {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 10px;
+		}
+
+		.e-minor {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 5px;
+
+		}
+
+		.e-date {
+			color: @text-02;
+			font-size: @fontsize-phone-xsmall;
+		}
+	}
+
+
+	.experience-container {
+		display: flex;
+		flex-direction: column;
+
+		.rightleft-container {
+			margin-top: 5px;
+			display: flex;
+			flex-direction: row;
+
+			.right {
+				display: flex;
+				flex-direction: column;
+				width: auto;
+			}
+
+			.left {
+				display: flex;
+				justify-content: flex-end;
+				width: auto;
+				margin-left: auto;
+			}
+		}
+
+		.e-title {
+			color: @text-01;
+			font-size: @fontsize-phone-small;
+		}
+
+		.e-company {
+			color: @text-02;
+			font-size: @fontsize-phone-small;
+			margin-top: 5px;
+			margin-bottom: 10px;
+
+		}
+
+		.e-date {
+			color: @text-02;
+			font-size: @fontsize-phone-xsmall;
+		}
+
+		.e-bullets {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-left: 13px;
+
+			li {
+				color: @text-02;
+				font-size: @fontsize-phone-small;
+				line-height: 2;
+			}
+		}
+
+		.bubbles-container {
+			margin-top: 15px;
+			margin-bottom: 30px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.green-bubble {
+			font-size: @fontsize-phone-xsmall;
+			padding: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 100px;
+			background-color: #1c4829;
+			color: #21c55d;
+		}
+
+	}
+
+}

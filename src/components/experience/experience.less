@@ -1,0 +1,48 @@
+@import '../../styles.less';
+
+.experience-component-container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	a {
+		text-decoration: none;
+	}
+
+	.currently {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.previously {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.title {
+		color: @text-01;
+		font-size: @fontsize-phone-medium;
+		margin-bottom: 0px;
+	}
+
+	.experience {
+		color: @text-02;
+		font-size: @fontsize-phone-small;
+	}
+}
+
+@media (min-width: 1500px) {
+	.experience-component-container {
+		margin-top: 15px;
+
+		.title {
+			font-size: @fontsize-phone-large;
+		}
+
+		.experience {
+			font-size: @fontsize-phone-medium;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@import '../../styles.less';
+
+.navbar-component-container {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	background-color: transparent;
+	font-size: @fontsize-phone-small;
+
+	a {
+		text-decoration: none;
+		background-color: transparent;
+		cursor: pointer;
+		color: @text-01;
+		transition: transform 0.3s ease;
+
+	}
+
+
+	i {
+		display: none;
+	}
+
+}
+
+@media (min-width: 1000px) {
+	.navbar-component-container {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			display: flex;
+			flex-direction: row;
+
+			i {
+				display: flex;
+			}
+
+		}
+
+		a:hover {
+			transform: translateX(10%);
+		}
+
+
+	}
+}
+
+@media (min-width: 1500px) {
+	.navbar-component-container {
+		margin-top: 45px;
+		font-size: @fontsize-phone-medium;
+	}
+}

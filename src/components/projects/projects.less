@@ -1,0 +1,52 @@
+@import '../../styles.less';
+
+.projects-component-container {
+	display: flex;
+	flex-direction: column;
+	gap: @component-spacing-small;
+
+	img {
+		width: 100%;
+	}
+
+	video {
+		width: 100%;
+	}
+
+	.title {
+		color: @text-01;
+		font-size: @fontsize-phone-medium;
+	}
+
+	.desc {
+		color: @text-02;
+		font-size: @fontsize-phone-small;
+	}
+
+	.project1-container {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		text-decoration: none;
+	}
+
+	.project2-container {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 1500px) {
+	.projects-component-container {
+		.title {
+			margin-top: 5px;
+			font-size: @fontsize-phone-large;
+		}
+
+		.desc {
+			font-size: @fontsize-phone-medium;
+		}
+	}
+}

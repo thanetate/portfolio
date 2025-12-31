@@ -1,0 +1,145 @@
+@import '../../styles.less';
+
+.homepage-container {
+	padding: @page-margin;
+	padding-top: 0; //to offset the sticky navbar padding
+
+	.leftright-container {}
+
+	.navbar-container {
+		display: flex;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		padding-top: 15px;
+		background-color: transparent;
+	}
+
+	.head-container {
+		margin-top: @component-spacing;
+
+	}
+
+	.experience-container {
+		margin-top: 20px;
+	}
+
+	.rightside-container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		gap: 30px;
+
+		// hide the about page
+		.hidden {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.homepage-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		.leftright-container {
+			max-width: 600px;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.homepage-container {
+		display: flex;
+		justify-content: flex-start;
+		padding: 60px;
+		padding-top: 15px;
+		padding-bottom: 30px;
+
+		.navbar-container {
+			position: fixed;
+			left: 60px;
+			margin-top: 330px;
+		}
+
+		.leftright-container {
+			display: flex;
+			flex-direction: row;
+			max-width: none;
+
+			border-color: purple;
+			border-style: solid;
+
+
+
+			.leftside-container {
+				display: flex;
+				position: fixed;
+				flex-direction: column;
+				justify-content: flex-start;
+				flex: 1;
+			}
+
+			.rightside-container {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 45px;
+				margin-left: 50%;
+				width: 50%;
+			}
+
+			.about-container {
+				border-color: red;
+				border-style: solid;
+
+				.aboutpage-container {
+					border-color: blue;
+					border-style: solid;
+					padding: 0px;
+
+					.navbar-container {
+						display: none;
+					}
+
+					.title {
+						margin-top: 0px;
+					}
+
+					.bg-white {
+						max-width: none;
+						width: 100%;
+						border-color: yellowgreen;
+						border-style: solid;
+
+						.content {
+							max-width: none;
+							width: 100%;
+						}
+					}
+				}
+			}
+
+			.projects-container {
+				border-color: red;
+				border-style: solid;
+			}
+
+
+		}
+	}
+}
+
+@media (min-width: 1500px) {
+	.homepage-container {
+		padding: 120px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		.navbar-container {
+			left: 120px;
+			margin-top: 345px;
+		}
+	}
+}

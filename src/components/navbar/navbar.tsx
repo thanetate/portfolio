@@ -1,0 +1,22 @@
+import 'remixicon/fonts/remixicon.css';
+import "./navbar.less"
+
+function NavBarComponent() {
+	return (
+		<div className="navbar-component-container">
+			<a href="/#">
+				<i className="ri-arrow-right-s-line"></i>
+				Work
+			</a>
+			<a href="/#About">
+				<i className="ri-arrow-right-s-line"></i>
+				About
+			</a>
+			<a href="/#Skills">
+				<i className="ri-arrow-right-s-line"></i>
+				Skills
+			</a>
+		</div>
+	)
+}
+export default NavBarComponent;

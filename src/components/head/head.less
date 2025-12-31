@@ -1,0 +1,54 @@
+@import '../../styles.less';
+
+.head-component-container {
+
+	.hc-leftright-container {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		padding-top: @component-spacing;
+	}
+
+	.left {}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.profile {
+		border-radius: 100px;
+	}
+
+	.title {
+		font-size: @fontsize-phone-medium;
+		color: @text-01;
+	}
+
+	.description {
+		font-size: @fontsize-phone-small;
+		color: @text-02;
+	}
+}
+
+@media (min-width: 1000px) {
+	.head-component-container {
+		.hc-leftright-container {
+			padding-top: 0px;
+		}
+	}
+
+}
+
+@media (min-width: 1500px) {
+	.head-component-container {
+		.title {
+			font-size: @fontsize-phone-large;
+		}
+
+		.description {
+			font-size: @fontsize-phone-medium;
+		}
+	}
+}
