@@ -74,7 +74,7 @@ function Projectpage() {
 			],
 			team: "",
 			github: "https://github.com/thanetate/theory",
-			live: "https://www.theoryclimbing.com/",
+			live: "https://www.theory.thanetate.dev/",
 			demo: "/theory-demo-fast.mp4",
 			image: [
 				{ image: "/theory-img-1.png" },
