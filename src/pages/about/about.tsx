@@ -123,7 +123,7 @@ function Aboutpage() {
 				<div className="title">About Me</div>
 				<LineComponent />
 				<div className="content">
-					Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about Microsoft Azure and how front, middle, and back office systems operate in the finance space.
+					Hello! <br></br> Lately, I’ve been excited to learn more about Neovim and Lua. At work, I’m learning more about cloud technologies, particularly Microsoft Azure and cloud-based infrastructure.
 				</div>
 				<div className="title-two">Education </div>
 				<LineComponent />
