@@ -1,4 +1,4 @@
-import "./head.less";
+import "./Head.less";
 
 function HeadComponent() {
 	return (
@@ -14,9 +14,9 @@ function HeadComponent() {
 					/>
 				</div>
 				<div className="right">
-					<div className="title">Hi, I'm Thane Tate</div>
+					<div className="title">Hello, I'm Thane</div>
 					<div className="description">
-						I am a Application Developer based in Dallas, TX.
+						I'm a Application Developer based in Dallas, TX.
 					</div>
 				</div>
 			</div>
