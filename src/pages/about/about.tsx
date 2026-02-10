@@ -23,10 +23,19 @@ type experiences = {
 
 const experiences = [
 	{
+		id: 4,
+		title: "Platform Engineer",
+		company: "Mirion Technologies",
+		date: "May 2026 - Present",
+		bullets: [],
+		bubbles: []
+	},
+
+	{
 		id: 3,
-		title: "Junior Associate Application Developer",
+		title: "Data Engineer",
 		company: "Fisher Investments",
-		date: "Aug 2025 - Present",
+		date: "Aug 2025 - May 2026",
 		bullets: [
 			{
 				bullet: "Developed Python-based Apache Airflow DAGs as part of a proof of concept to orchestrate data workflows."
@@ -45,9 +54,9 @@ const experiences = [
 	},
 	{
 		id: 2,
-		title: "Application Developer Intern",
+		title: "Data Engineer Intern",
 		company: "Fisher Investments",
-		date: "May - Aug 2025",
+		date: "May 2025 - Aug 2025",
 		bullets: [
 			{ bullet: "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace." },
 		],

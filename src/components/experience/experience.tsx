@@ -8,14 +8,18 @@ function ExperienceComponent() {
 			<div className="currently">
 				<div className="title">Currently -</div>
 				<a href={"/#About"} className="experience">
-					Application Developer @ Fisher Investments
+					Platform Engineer @ Mirion
 				</a>
 			</div>
 
 			<div className="previously">
 				<div className="title">Previously -</div>
 				<a href={"/#About"} className="experience">
-					Application Developer Intern @ Fisher Investments
+					Data Engineer @ Fisher Investments
+				</a>
+
+				<a href={"/#About"} className="experience">
+					Data Engineer Intern @ Fisher Investments
 				</a>
 				<a href={"/#About"} className="experience">
 					Freelance Web Developer

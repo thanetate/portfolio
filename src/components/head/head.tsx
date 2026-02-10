@@ -16,7 +16,7 @@ function HeadComponent() {
 				<div className="right">
 					<div className="title">Hello, I'm Thane</div>
 					<div className="description">
-						I'm a Application Developer based in Dallas, TX.
+						I'm a Platform Engineer based in Dallas, TX.
 					</div>
 				</div>
 			</div>
