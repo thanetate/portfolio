@@ -1,322 +1,322 @@
 @import '../../styles.less';
 
 .homepage-container {
-	padding: @page-margin;
-	padding-top: 0; //to offset the sticky navbar padding
-	display: flex;
-	flex-direction: column;
+    padding: @page-margin;
+    padding-top: 0; //to offset the sticky navbar padding
+    display: flex;
+    flex-direction: column;
 
-	//navbar
-	.navbar-container {
-		display: flex;
-		justify-content: center;
-		top: 0;
-		padding-top: 25px;
-		background-color: transparent;
-	}
+    //navbar
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        padding-top: 25px;
+        background-color: transparent;
+    }
 
-	// all of the pages
-	.rightside-container {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
+    // all of the pages
+    .rightside-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-	//home page
-	.home-container {
-		.head-container {
-			margin-top: @component-spacing;
-		}
+    //home page
+    .home-container {
+        .head-container {
+            margin-top: @component-spacing;
+        }
 
-		.experience-container {
-			margin-top: 20px;
-			margin-bottom: 30px;
-		}
+        .experience-container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
 
-		.footer-container {
-			margin-top: 30px;
-		}
-	}
+        .footer-container {
+            margin-top: 30px;
+        }
+    }
 
-	.leftside-container {
-		display: none;
-	}
+    .leftside-container {
+        display: none;
+    }
 }
 
 @media (min-width: 600px) {
-	.homepage-container {
-		align-items: center;
+    .homepage-container {
+        align-items: center;
 
-		.rightside-container {
-			width: 100%;
-			max-width: 600px;
-		}
+        .rightside-container {
+            width: 100%;
+            max-width: 600px;
+        }
 
-	}
+    }
 }
 
 @media (min-width: 1000px) {
-	.homepage-container {
-		display: flex;
-		justify-content: flex-start;
-		padding: 60px;
-		padding-top: 15px;
-		padding-bottom: 30px;
-		align-items: stretch;
+    .homepage-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 60px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        align-items: stretch;
 
-		//home page
-		.home-container {
-			.head-container {
-				display: none;
-			}
+        //home page
+        .home-container {
+            .head-container {
+                display: none;
+            }
 
-			.experience-container {
-				display: none;
-			}
-		}
+            .experience-container {
+                display: none;
+            }
+        }
 
-		//other head container
-		.leftside-container {
-			margin-top: 45px;
+        //other head container
+        .leftside-container {
+            margin-top: 45px;
 
-			.experience-container {
-				margin-top: 30px;
-			}
+            .experience-container {
+                margin-top: 50px;
+            }
 
-		}
+        }
 
-		.navbar-container {
-			position: fixed;
-			left: 60px;
-			margin-top: 330px;
-		}
+        .navbar-container {
+            position: fixed;
+            left: 60px;
+            margin-top: 330px;
+        }
 
-		.leftright-container {
-			display: flex;
-			flex-direction: row;
-			max-width: none;
+        .leftright-container {
+            display: flex;
+            flex-direction: row;
+            max-width: none;
 
-			.leftside-container {
-				display: flex;
-				position: fixed;
-				flex-direction: column;
-				justify-content: flex-start;
-				flex: 1;
-			}
+            .leftside-container {
+                display: flex;
+                position: fixed;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex: 1;
+            }
 
-			.rightside-container {
-				display: flex;
-				justify-content: flex-end;
-				margin-top: 45px;
-				margin-left: auto;
-				max-width: 50%;
+            .rightside-container {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 45px;
+                margin-left: auto;
+                max-width: 50%;
 
-				// about page
-				.about-container {
-					.aboutpage-container {
-						padding: 0px;
+                // about page
+                .about-container {
+                    .aboutpage-container {
+                        padding: 0px;
 
-						.navbar-container {
-							display: none;
-						}
+                        .navbar-container {
+                            display: none;
+                        }
 
-						.title {
-							margin-top: 0px;
-						}
-					}
-				}
+                        .title {
+                            margin-top: 0px;
+                        }
+                    }
+                }
 
-				// skills page
-				.skills-container {
-					.skillspage-container {
-						padding: 0px;
-						min-height: calc(100vh - 100px);
+                // skills page
+                .skills-container {
+                    .skillspage-container {
+                        padding: 0px;
+                        min-height: calc(100vh - 100px);
 
-						.navbar-container {
-							display: none;
-						}
+                        .navbar-container {
+                            display: none;
+                        }
 
-						.title {
-							margin-top: 0px;
-						}
-					}
-				}
+                        .title {
+                            margin-top: 0px;
+                        }
+                    }
+                }
 
-				// projects page
-				.project-container {
-					.projectpage-container {
-						padding: 0px;
+                // projects page
+                .project-container {
+                    .projectpage-container {
+                        padding: 0px;
 
-						.navbar-container {
-							display: none;
-						}
+                        .navbar-container {
+                            display: none;
+                        }
 
-						.s-title {
-							margin-top: 0px;
-						}
-					}
-				}
-			}
-		}
-	}
+                        .s-title {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1500px) {
-	.homepage-container {
-		padding: 120px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+    .homepage-container {
+        padding: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-		.navbar-container {
-			left: 120px;
-			margin-top: 345px;
-		}
+        .navbar-container {
+            left: 120px;
+            margin-top: 355px;
+        }
 
-		.leftright-container {
-			.rightside-container {
+        .leftright-container {
+            .rightside-container {
 
-				// about page
-				.about-container {
-					.aboutpage-container {
-						.title {
-							font-size: @fontsize-phone-large;
-						}
+                // about page
+                .about-container {
+                    .aboutpage-container {
+                        .title {
+                            font-size: @fontsize-phone-large;
+                        }
 
-						.content {
-							font-size: @fontsize-phone-medium;
-						}
+                        .content {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.title-two {
-							font-size: @fontsize-phone-medium;
-						}
+                        .title-two {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.experience-container {
-							.e-title {
-								font-size: @fontsize-phone-medium;
-							}
+                        .experience-container {
+                            .e-title {
+                                font-size: @fontsize-phone-medium;
+                            }
 
 
-							.e-company {
-								font-size: @fontsize-phone-medium;
-							}
+                            .e-company {
+                                font-size: @fontsize-phone-medium;
+                            }
 
-							.e-date {
-								font-size: @fontsize-phone-small;
-							}
+                            .e-date {
+                                font-size: @fontsize-phone-small;
+                            }
 
-							.green-bubble {
-								font-size: @fontsize-phone-small;
-							}
-						}
+                            .green-bubble {
+                                font-size: @fontsize-phone-small;
+                            }
+                        }
 
-						.education-container {
-							.e-title {
-								font-size: @fontsize-phone-medium;
-							}
+                        .education-container {
+                            .e-title {
+                                font-size: @fontsize-phone-medium;
+                            }
 
-							.e-company {
-								font-size: @fontsize-phone-medium;
-							}
+                            .e-company {
+                                font-size: @fontsize-phone-medium;
+                            }
 
-							.e-minor {
-								font-size: @fontsize-phone-medium;
-							}
+                            .e-minor {
+                                font-size: @fontsize-phone-medium;
+                            }
 
-							.e-date {
-								font-size: @fontsize-phone-small;
-							}
+                            .e-date {
+                                font-size: @fontsize-phone-small;
+                            }
 
-						}
+                        }
 
-						.e-bullets {
-							li {
-								font-size: @fontsize-phone-medium;
-							}
-						}
-					}
-				}
+                        .e-bullets {
+                            li {
+                                font-size: @fontsize-phone-medium;
+                            }
+                        }
+                    }
+                }
 
-				// skills page
-				.skills-container {
-					.skillspage-container {
-						min-height: calc(100vh - 130px);
+                // skills page
+                .skills-container {
+                    .skillspage-container {
+                        min-height: calc(100vh - 130px);
 
-						.title {
-							font-size: @fontsize-phone-large;
-						}
+                        .title {
+                            font-size: @fontsize-phone-large;
+                        }
 
-						.s-title {
-							font-size: @fontsize-phone-medium;
-						}
+                        .s-title {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.blue-bubble {
-							font-size: @fontsize-phone-medium;
-						}
+                        .blue-bubble {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.green-bubble {
-							font-size: @fontsize-phone-medium;
-						}
+                        .green-bubble {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.purple-bubble {
-							font-size: @fontsize-phone-medium;
-						}
+                        .purple-bubble {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.red-bubble {
-							font-size: @fontsize-phone-medium;
-						}
+                        .red-bubble {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.yellow-bubble {
-							font-size: @fontsize-phone-medium;
-						}
-					}
-				}
+                        .yellow-bubble {
+                            font-size: @fontsize-phone-medium;
+                        }
+                    }
+                }
 
-				// project page
-				.project-container {
-					.projectpage-container {
-						.s-title {
-							font-size: @fontsize-phone-medium;
-						}
+                // project page
+                .project-container {
+                    .projectpage-container {
+                        .s-title {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.title {
-							font-size: @fontsize-phone-large;
-						}
+                        .title {
+                            font-size: @fontsize-phone-large;
+                        }
 
-						.description1 {
-							font-size: @fontsize-phone-medium;
-						}
+                        .description1 {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.description2 {
-							font-size: @fontsize-phone-medium;
-						}
+                        .description2 {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.box-container {
-							font-size: @fontsize-phone-medium;
-						}
+                        .box-container {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.tech {
-							font-size: @fontsize-phone-medium;
-						}
+                        .tech {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.green-bubble {
-							font-size: @fontsize-phone-small;
-						}
+                        .green-bubble {
+                            font-size: @fontsize-phone-small;
+                        }
 
-						.block-title {
-							font-size: @fontsize-phone-medium;
-						}
+                        .block-title {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.block-info {
-							font-size: @fontsize-phone-medium;
-						}
+                        .block-info {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-						.link-a {
-							font-size: @fontsize-phone-medium;
-						}
+                        .link-a {
+                            font-size: @fontsize-phone-medium;
+                        }
 
-					}
-				}
-			}
-		}
-	}
+                    }
+                }
+            }
+        }
+    }
 }
