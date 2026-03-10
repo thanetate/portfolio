@@ -4,81 +4,71 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./about.less";
 
-type bullets = {
-  bullet: string;
-};
-
 type bubbles = {
   bubble: string;
 };
 
 type experiences = {
   id: number;
+  logo: string;
   title: string;
   company: string;
   date: string;
-  bullets: bullets[];
+  description: string;
   bubbles: bubbles[];
 };
 
 const experiences = [
-  // {
-  // 	id: 4,
-  // 	title: "Platform Engineer",
-  // 	company: "Mirion Technologies",
-  // 	date: "May 2026 - Present",
-  // 	bullets: [],
-  // 	bubbles: []
-  // },
+  {
+    id: 4,
+    logo: "/profile3.png",
+    title: "Platform Engineer",
+    company: "Mirion Technologies",
+    date: "May 2026 - Present",
+    description: "",
+    bubbles: [],
+  },
 
-  // {
-  // 	id: 3,
-  // 	title: "Data Engineer",
-  // 	company: "Fisher Investments",
-  // 	date: "Aug 2025 - May 2026",
-  // 	bullets: [
-  // 		{
-  // 			bullet: "Developed Python-based Apache Airflow DAGs as part of a proof of concept to orchestrate data workflows."
-  // 		},
-  // 		{
-  // 			bullet: "Built, maintained, and debugged Azure Data Factory pipelines supporting cash and trading workflows."
-  // 		},
-  // 	],
-  // 	bubbles: [
-  // 		{ bubble: "Python" },
-  // 		{ bubble: "Apache Airflow" },
-  // 		{ bubble: "Azure" },
-  // 		{ bubble: "Azure Data Factory" },
-  // 		{ bubble: "SQL" },
-  // 	]
-  // },
-  // {
-  // 	id: 2,
-  // 	title: "Data Engineer Intern",
-  // 	company: "Fisher Investments",
-  // 	date: "May 2025 - Aug 2025",
-  // 	bullets: [
-  // 		{ bullet: "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace." },
-  // 	],
-  // 	bubbles: [
-  // 		{ bubble: "Splunk" },
-  // 		{ bubble: "Dynatrace" },
-  // 		{ bubble: "Azure" },
-  // 		{ bubble: "Azure Data Factory" },
-  // 		{ bubble: "SQL" },
-  // 	]
-  // },
+  {
+    id: 3,
+    logo: "/profile3.png",
+    title: "Data Engineer",
+    company: "Fisher Investments",
+    date: "Aug 2025 - May 2026",
+    description:
+      "Developed Python-based Apache Airflow DAGs to orchestrate data workflows and built, maintained, and debugged Azure Data Factory pipelines supporting cash and trading workflows.",
+    bubbles: [
+      { bubble: "Python" },
+      { bubble: "Apache Airflow" },
+      { bubble: "Azure" },
+      { bubble: "Azure Data Factory" },
+      { bubble: "SQL" },
+    ],
+  },
+  {
+    id: 2,
+    logo: "/profile3.png",
+    title: "Data Engineer Intern",
+    company: "Fisher Investments",
+    date: "May 2025 - Aug 2025",
+    description:
+      "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace.",
+    bubbles: [
+      { bubble: "Splunk" },
+      { bubble: "Dynatrace" },
+      { bubble: "Azure" },
+      { bubble: "Azure Data Factory" },
+      { bubble: "SQL" },
+    ],
+  },
   {
     id: 1,
+    logo: "/profile3.png",
     title: "Freelance Web Developer",
     company: "none",
     date: "Mar 2025",
-    bullets: [
-      {
-        bullet:
-          "Built a responsive and SEO-friendly website for a photography student, improving user experience and search visibility.",
-      },
-    ],
+    description:
+      "Built a responsive and SEO-friendly website for a photography student, improving user experience and search visibility.",
     bubbles: [
       { bubble: "React" },
       { bubble: "TypeScript" },
@@ -98,6 +88,11 @@ function Aboutpage() {
   const experienceList = experiences.map((experience) => {
     return (
       <div key={experience.id}>
+        <img
+          className="e-logo"
+          src={experience.logo}
+          alt={experience.company}
+        />
         <div className="rightleft-container">
           <div className="right">
             <div className="e-company">{experience.company}</div>
@@ -107,11 +102,9 @@ function Aboutpage() {
           </div>
         </div>
         <div className="e-title">{experience.title}</div>
-        <div className="e-bullets">
-          {experience.bullets.map((item, index) => (
-            <li key={index}>{item.bullet}</li>
-          ))}
-        </div>
+        {experience.description && (
+          <div className="e-description">{experience.description}</div>
+        )}
         <div className="bubbles-container">
           {experience.bubbles.map((bubble, index) => (
             <div key={index} className="green-bubble">

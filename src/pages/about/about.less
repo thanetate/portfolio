@@ -79,6 +79,16 @@
         display: flex;
         flex-direction: column;
 
+        .e-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
         .rightleft-container {
             margin-top: 5px;
             display: flex;
@@ -115,17 +125,12 @@
             font-size: @fontsize-phone-xsmall;
         }
 
-        .e-bullets {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            list-style: none;
-
-            li {
-                color: @text-02;
-                font-size: @fontsize-phone-small;
-                line-height: 2;
-            }
+        .e-description {
+            color: @text-02;
+            font-size: @fontsize-phone-small;
+            line-height: 1.8;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
 
         .bubbles-container {
