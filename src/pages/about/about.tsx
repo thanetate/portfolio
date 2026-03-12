@@ -10,7 +10,6 @@ type bubbles = {
 
 type experiences = {
   id: number;
-  logo: string;
   title: string;
   company: string;
   date: string;
@@ -21,7 +20,6 @@ type experiences = {
 const experiences = [
   {
     id: 4,
-    logo: "/profile3.png",
     title: "Platform Engineer",
     company: "Mirion Technologies",
     date: "May 2026 - Present",
@@ -31,7 +29,6 @@ const experiences = [
 
   {
     id: 3,
-    logo: "/profile3.png",
     title: "Data Engineer",
     company: "Fisher Investments",
     date: "Aug 2025 - May 2026",
@@ -47,7 +44,6 @@ const experiences = [
   },
   {
     id: 2,
-    logo: "/profile3.png",
     title: "Data Engineer Intern",
     company: "Fisher Investments",
     date: "May 2025 - Aug 2025",
@@ -63,7 +59,6 @@ const experiences = [
   },
   {
     id: 1,
-    logo: "/profile3.png",
     title: "Freelance Web Developer",
     company: "none",
     date: "Mar 2025",
@@ -88,20 +83,15 @@ function Aboutpage() {
   const experienceList = experiences.map((experience) => {
     return (
       <div key={experience.id}>
-        <img
-          className="e-logo"
-          src={experience.logo}
-          alt={experience.company}
-        />
         <div className="rightleft-container">
           <div className="right">
-            <div className="e-company">{experience.company}</div>
+            <div className="e-title">{experience.title}</div>
           </div>
           <div className="left">
             <div className="e-date">{experience.date}</div>
           </div>
         </div>
-        <div className="e-title">{experience.title}</div>
+        <div className="e-company">{experience.company}</div>
         {experience.description && (
           <div className="e-description">{experience.description}</div>
         )}
