@@ -22,23 +22,30 @@ const experiences = [
     id: 4,
     title: "Platform Engineer",
     company: "Mirion Technologies",
-    date: "May 2026 - Present",
-    description: "",
-    bubbles: [],
+    date: "2026 - Present",
+    description:
+      "Developing and maintaining cloud infrastructure and data platforms that power large-scale applications and data processing.",
+    bubbles: [
+      { bubble: "Python" },
+      { bubble: "Databricks" },
+      { bubble: "Azure" },
+      { bubble: "Apache Spark" },
+      { bubble: "Terraform" },
+    ],
   },
 
   {
     id: 3,
     title: "Data Engineer",
     company: "Fisher Investments",
-    date: "Aug 2025 - May 2026",
+    date: "2025 - 2026",
     description:
-      "Developed Python-based Apache Airflow DAGs to orchestrate data workflows and built, maintained, and debugged Azure Data Factory pipelines supporting cash and trading workflows.",
+      "Built and maintained data pipelines on the Integrations team within the Portfolio Management Group, supporting systems managing $400B+ in assets under management",
     bubbles: [
-      { bubble: "Python" },
-      { bubble: "Apache Airflow" },
       { bubble: "Azure" },
       { bubble: "Azure Data Factory" },
+      { bubble: "Python" },
+      { bubble: "Apache Airflow" },
       { bubble: "SQL" },
     ],
   },
@@ -46,9 +53,9 @@ const experiences = [
     id: 2,
     title: "Data Engineer Intern",
     company: "Fisher Investments",
-    date: "May 2025 - Aug 2025",
+    date: "2025",
     description:
-      "Developed an observability tool for the Portfolio Management Group supporting $300B+ in AUM, leveraging Splunk and Dynatrace.",
+      "Built an observability tool which reduced error response times by 30% across systems managing $400B+ in assets under management",
     bubbles: [
       { bubble: "Splunk" },
       { bubble: "Dynatrace" },
@@ -60,10 +67,10 @@ const experiences = [
   {
     id: 1,
     title: "Freelance Web Developer",
-    company: "none",
-    date: "Mar 2025",
+    company: "Self-Employed",
+    date: "2024",
     description:
-      "Built a responsive and SEO-friendly website for a photography student, improving user experience and search visibility.",
+      "Designed and developed a responsive, image-optimized portfolio site for a photography student, increasing site traffic by 100+ visitors in the first month.",
     bubbles: [
       { bubble: "React" },
       { bubble: "TypeScript" },
@@ -117,11 +124,17 @@ function Aboutpage() {
         <div className="title">About Me</div>
         <LineComponent />
         <div className="content">
-          Hello! <br></br> Lately, I’ve been excited to learn more about Neovim
-          and Lua. At work, I’m learning more about cloud technologies,
-          particularly Microsoft Azure and cloud-based infrastructure.
+          Hello, I'm Thane! <br></br> A recent grad from the Unviersity of North
+          Texas, with a degree in Computer Science. <br></br> Currently, I'm
+          working at Mirion as a Platform Engineer. Before that, I interned and
+          worked at Fisher Investments as a Data Engineer. <br></br> Lately,
+          I've been excited to learn more about Neovim, Python, and cloud-based
+          infrastructure.
         </div>
-        <div className="title-two">Education </div>
+        <div className="title-two">Experience</div>
+        <LineComponent />
+        <div className="experience-container">{experienceList}</div>
+        <div className="title-two">Education</div>
         <LineComponent />
         <div className="education-container">
           <div className="rightleft-container">
@@ -133,13 +146,10 @@ function Aboutpage() {
               <div className="e-minor">Minor in Mathematics</div>
             </div>
             <div className="left">
-              <div className="e-date">May 2026</div>
+              <div className="e-date">2021 - 2026</div>
             </div>
           </div>
         </div>
-        <div className="title-two">Work Experience</div>
-        <LineComponent />
-        <div className="experience-container">{experienceList}</div>
         <LineComponent />
         <FooterComponent />
       </motion.div>
