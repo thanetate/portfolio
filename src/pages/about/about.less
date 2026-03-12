@@ -6,10 +6,10 @@
         font-size: @fontsize-phone-medium;
         color: @text-01;
         margin-bottom: 15px;
+
     }
 
     .title-two {
-        margin-top: 30px;
         font-size: @fontsize-phone-small;
         color: @text-02;
         margin-bottom: 15px;
@@ -18,23 +18,25 @@
     .content {
         color: @text-02;
         font-size: @fontsize-phone-small;
-        line-height: 2;
+        line-height: 1.8;
+        margin-bottom: 30px;
+
+        br {
+            display: block;
+            margin-bottom: 15px;
+        }
     }
 
     mark {
         color: @text-01;
     }
 
-    br {
-        margin-bottom: 5px;
-    }
-
+    // Education Section
     .education-container {
         .rightleft-container {
             display: flex;
             flex-direction: row;
-            margin-top: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 45px;
 
             .right {
                 display: flex;
@@ -52,7 +54,6 @@
         .e-title {
             color: @text-01;
             font-size: @fontsize-phone-small;
-
         }
 
         .e-company {
@@ -74,13 +75,12 @@
         }
     }
 
-
+    // Experience Section
     .experience-container {
         display: flex;
         flex-direction: column;
 
         .rightleft-container {
-            margin-top: 20px;
             display: flex;
             flex-direction: row;
 
@@ -108,6 +108,22 @@
             font-size: @fontsize-phone-small;
             margin-top: 5px;
             margin-bottom: 10px;
+        }
+
+        .e-company-link {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .e-company-link:hover {
+            color: #21c55d;
+            text-decoration: none;
+        }
+
+        .e-company-link:focus-visible {
+            color: #21c55d;
+            text-decoration: none;
         }
 
         .e-date {
@@ -139,10 +155,9 @@
         .green-bubble {
             font-size: @fontsize-phone-xsmall;
             padding: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 100px;
+            border-radius: 4px;
             background-color: #1c4829;
+            border-width: 1px;
             color: #21c55d;
         }
 

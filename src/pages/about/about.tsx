@@ -12,6 +12,7 @@ type experiences = {
   id: number;
   title: string;
   company: string;
+  companyUrl?: string;
   date: string;
   description: string;
   bubbles: bubbles[];
@@ -22,6 +23,7 @@ const experiences = [
     id: 4,
     title: "Platform Engineer",
     company: "Mirion Technologies",
+    companyUrl: "https://www.mirion.com",
     date: "2026 - Present",
     description:
       "Developing and maintaining cloud infrastructure and data platforms that power large-scale applications and data processing.",
@@ -38,6 +40,7 @@ const experiences = [
     id: 3,
     title: "Data Engineer",
     company: "Fisher Investments",
+    companyUrl: "https://www.fisherinvestments.com",
     date: "2025 - 2026",
     description:
       "Built and maintained data pipelines on the Integrations team within the Portfolio Management Group, supporting systems managing $400B+ in assets under management",
@@ -53,6 +56,7 @@ const experiences = [
     id: 2,
     title: "Data Engineer Intern",
     company: "Fisher Investments",
+    companyUrl: "https://www.fisherinvestments.com",
     date: "2025",
     description:
       "Built an observability tool which reduced error response times by 30% across systems managing $400B+ in assets under management",
@@ -98,7 +102,20 @@ function Aboutpage() {
             <div className="e-date">{experience.date}</div>
           </div>
         </div>
-        <div className="e-company">{experience.company}</div>
+        <div className="e-company">
+          {experience.companyUrl ? (
+            <a
+              className="e-company-link"
+              href={experience.companyUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {experience.company}
+            </a>
+          ) : (
+            experience.company
+          )}
+        </div>
         {experience.description && (
           <div className="e-description">{experience.description}</div>
         )}
