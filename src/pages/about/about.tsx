@@ -142,11 +142,13 @@ function Aboutpage() {
         <LineComponent />
         <div className="content">
           Hello, I'm Thane! <br></br> A recent grad from the Unviersity of North
-          Texas, with a degree in Computer Science. <br></br> Currently, I'm
-          working at Mirion as a Platform Engineer. Before that, I interned and
-          worked at Fisher Investments as a Data Engineer. <br></br> Lately,
-          I've been excited to learn more about Neovim, Python, and cloud-based
-          infrastructure.
+          Texas, with a degree in{" "}
+          <span className="text-highlight-straight">Computer Science</span>.{" "}
+          <br></br> Currently, I'm working at Mirion as a{" "}
+          <span className="text-highlight">Platform Engineer</span>. Before
+          that, I interned and worked at Fisher Investments as a Data Engineer.{" "}
+          <br></br> Lately, I've been excited to learn more about Neovim,
+          Python, and cloud-based infrastructure.
         </div>
         <div className="title-two">Experience</div>
         <LineComponent />

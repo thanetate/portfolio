@@ -31,6 +31,23 @@
         color: @text-01;
     }
 
+    .text-highlight {
+        color: @text-02;
+        text-decoration: underline;
+        text-decoration-color: #FFF700;
+        text-decoration-thickness: 1px;
+        text-decoration-style: wavy;
+        text-underline-offset: 5px;
+    }
+
+    .text-highlight-straight {
+        color: @text-02;
+        text-decoration: underline;
+        text-decoration-color: #FFF700;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
+    }
+
     // Education Section
     .education-container {
         .rightleft-container {
@@ -117,12 +134,14 @@
         }
 
         .e-company-link:hover {
-            color: #21c55d;
+            color: #FFF700;
+            // color: #6767FF;
             text-decoration: none;
         }
 
         .e-company-link:focus-visible {
-            color: #21c55d;
+            color: #FFF700;
+            // color: #6767FF;
             text-decoration: none;
         }
 
@@ -156,9 +175,13 @@
             font-size: @fontsize-phone-xsmall;
             padding: 5px;
             border-radius: 4px;
-            background-color: #1c4829;
+            // background-color: #1c4829;
             border-width: 1px;
-            color: #21c55d;
+            // color: #21c55d;
+            color: @text-02;
+            border-color: @text-02;
+            border-style: solid;
+            border-width: 1px;
         }
 
     }
