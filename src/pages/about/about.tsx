@@ -33,6 +33,7 @@ const experiences = [
       { bubble: "Azure" },
       { bubble: "Apache Spark" },
       { bubble: "Terraform" },
+      { bubble: "SQL" },
     ],
   },
 
@@ -141,9 +142,9 @@ function Aboutpage() {
         <div className="title">About Me</div>
         <LineComponent />
         <div className="content">
-          Hello, I'm Thane! <br></br> A recent grad from the Unviersity of North
-          Texas, with a degree in{" "}
-          <span className="text-highlight-straight">Computer Science</span>.{" "}
+          Hello, I'm Thane! <br></br>
+          <span className="text-highlight-straight">A recent grad</span> from
+          the Unviersity of North Texas, with a degree in Computer Science
           <br></br> Currently, I'm working at Mirion as a{" "}
           <span className="text-highlight">Platform Engineer</span>. Before
           that, I interned and worked at Fisher Investments as a Data Engineer.{" "}
