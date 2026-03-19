@@ -14,9 +14,27 @@
         color: @text-01;
     }
 
-    .description {
+    .description-line {
         font-size: @fontsize-phone-medium;
         color: @text-02;
+    }
+
+    .location-line {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        font-size: @fontsize-phone-medium;
+        color: @text-02;
+
+        i {
+            font-size: @fontsize-phone-medium;
+            color: @text-02;
+        }
+
+        span {
+            color: @text-02;
+        }
     }
 }
 
@@ -32,8 +50,16 @@
             font-size: 45px;
         }
 
-        .description {
+        .description-line {
             font-size: @fontsize-phone-large;
+        }
+
+        .location-line {
+            font-size: @fontsize-phone-large;
+
+            i {
+                font-size: @fontsize-phone-large;
+            }
         }
     }
 }
