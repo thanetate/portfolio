@@ -182,7 +182,9 @@ function Projectpage() {
               <LineComponent />
               <div className="demo-media-frame">
                 {!isDemoLoaded && (
-                  <div className="media-placeholder" aria-hidden="true" />
+                  <div className="media-placeholder" aria-hidden="true">
+                    <div className="loading-spinner" />
+                  </div>
                 )}
                 <video
                   src={currentProject?.demo}
@@ -199,7 +201,9 @@ function Projectpage() {
                 {currentProject.image.map((image: Demo, index: number) => (
                   <div key={index} className="demo-image-frame">
                     {!loadedImages[image.image] && (
-                      <div className="media-placeholder" aria-hidden="true" />
+                      <div className="media-placeholder" aria-hidden="true">
+                        <div className="loading-spinner" />
+                      </div>
                     )}
                     <img
                       src={image.image}

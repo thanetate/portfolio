@@ -10,7 +10,9 @@ function ProjectsComponent() {
       <a className="project1-container" href="/#Mapo">
         <div className="media-frame">
           {!isMapoLoaded && (
-            <div className="media-placeholder" aria-hidden="true" />
+            <div className="media-placeholder" aria-hidden="true">
+              <div className="loading-spinner" />
+            </div>
           )}
           <video
             className={isMapoLoaded ? "is-loaded" : ""}
@@ -20,6 +22,7 @@ function ProjectsComponent() {
             muted
             playsInline
             onLoadedData={() => setIsMapoLoaded(true)}
+            onError={() => setIsMapoLoaded(true)}
           />
         </div>
         <div className="title">Mapo</div>
@@ -30,13 +33,16 @@ function ProjectsComponent() {
       <a className="project2-container" href="/#Theory">
         <div className="media-frame">
           {!isTheoryLoaded && (
-            <div className="media-placeholder" aria-hidden="true" />
+            <div className="media-placeholder" aria-hidden="true">
+              <div className="loading-spinner" />
+            </div>
           )}
           <img
             className={isTheoryLoaded ? "is-loaded" : ""}
             src="theory-img-1.png"
             alt=""
             onLoad={() => setIsTheoryLoaded(true)}
+            onError={() => setIsTheoryLoaded(true)}
           />
         </div>
         <div className="title">Theory</div>

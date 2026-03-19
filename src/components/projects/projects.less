@@ -18,6 +18,22 @@
         position: absolute;
         inset: 0;
         background-color: white;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loading-spinner {
+        width: 32px;
+        height: 32px;
+        border: 4px dotted #111111;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation 1.2s linear infinite;
+        background-color: white;
     }
 
     img {
@@ -70,6 +86,16 @@
         flex-direction: column;
         gap: 5px;
         text-decoration: none;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
