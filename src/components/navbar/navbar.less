@@ -1,54 +1,99 @@
 @import '../../styles.less';
 
 .navbar-component-container {
-	display: flex;
-	flex-direction: row;
-	gap: 25px;
-	background-color: transparent;
-	font-size: @fontsize-phone-small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: @fontsize-phone-small;
 
-	a {
-		text-decoration: none;
-		background-color: transparent;
-		cursor: pointer;
-		color: @text-01;
-		transition: transform 0.3s ease;
+    .brand-link {
+        font-size: @fontsize-phone-small;
+        margin-right: auto;
+        text-decoration: underline;
+    }
 
-	}
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-left: auto;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: @text-01;
+        transition: transform 0.3s ease;
+
+    }
 
 
-	i {
-		display: none;
-	}
+    i {
+        display: none;
+    }
 
+}
+
+@media (min-width: 450px) {
+    .navbar-component-container {
+        .nav-links {
+            position: absolute;
+            left: 50%;
+            margin-left: 0;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (min-width: 1000px) {
-	.navbar-component-container {
-		display: flex;
-		flex-direction: column;
+    .navbar-component-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: flex-start;
+        width: auto;
 
-		a {
-			display: flex;
-			flex-direction: row;
+        .brand-link {
+            display: none;
+        }
 
-			i {
-				display: flex;
-			}
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            position: static;
+            left: auto;
+            transform: none;
+        }
 
-		}
+        .nav-links a {
+            display: flex;
+            flex-direction: row;
 
-		a:hover {
-			transform: translateX(10%);
-		}
+            i {
+                display: flex;
+            }
+
+        }
+
+        .nav-links a:hover {
+            transform: translateX(10%);
+        }
 
 
-	}
+    }
 }
 
 @media (min-width: 1500px) {
-	.navbar-component-container {
-		margin-top: 45px;
-		font-size: @fontsize-phone-medium;
-	}
+    .navbar-component-container {
+        font-size: @fontsize-phone-medium;
+    }
 }

@@ -10,6 +10,7 @@
     .navbar-container {
         display: flex;
         justify-content: center;
+        width: 100%;
         top: 0;
         padding-top: 25px;
         background-color: transparent;
@@ -46,6 +47,11 @@
 @media (min-width: 600px) {
     .homepage-container {
         align-items: center;
+
+        .navbar-container {
+            width: 100%;
+            max-width: 600px;
+        }
 
         .rightside-container {
             width: 100%;
@@ -89,6 +95,9 @@
             position: fixed;
             left: 60px;
             margin-top: 330px;
+            justify-content: flex-start;
+            width: auto;
+            max-width: none;
         }
 
         .leftright-container {
