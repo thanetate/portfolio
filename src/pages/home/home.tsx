@@ -5,7 +5,6 @@ import ProjectsComponent from "../../components/projects/projects";
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import Aboutpage from "../about/about";
-import Skillspage from "../skills/skills";
 import Projectpage from "../project/project";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -76,11 +75,6 @@ function Homepage() {
           {activeSection === "#About" && (
             <div className="about-container">
               <Aboutpage />
-            </div>
-          )}
-          {activeSection === "#Skills" && (
-            <div className="skills-container">
-              <Skillspage />
             </div>
           )}
           {activeSection === "#Mapo" && (
