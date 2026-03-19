@@ -51,9 +51,11 @@ function Projectpage() {
       skills: [
         { bubble: "AWS" },
         { bubble: "Angular" },
+        { bubble: "TypeScript" },
         { bubble: "Golang" },
         { bubble: "PostgreSQL" },
         { bubble: "Docker" },
+        { bubble: "GitHub Actions" },
       ],
       team: "Ben Sivorivong",
       github: "https://github.com/bensivo/mapo",
@@ -71,8 +73,9 @@ function Projectpage() {
       skills: [
         { bubble: "Azure" },
         { bubble: "React" },
-        { bubble: "C#" },
+        { bubble: "TypeScript" },
         { bubble: "ASP.NET Core" },
+        { bubble: "C#" },
         { bubble: "PostgreSQL" },
       ],
       team: "",

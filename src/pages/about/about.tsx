@@ -1,6 +1,7 @@
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import { useEffect } from "react";
+import type { ReactNode } from "react";
 import { motion } from "framer-motion";
 import "./about.less";
 
@@ -14,7 +15,7 @@ type experiences = {
   company: string;
   companyUrl?: string;
   date: string;
-  description: string;
+  description: ReactNode;
   bubbles: bubbles[];
 };
 
@@ -30,9 +31,9 @@ const experiences = [
     bubbles: [
       { bubble: "Python" },
       { bubble: "Databricks" },
-      { bubble: "Azure" },
       { bubble: "Apache Spark" },
       { bubble: "Terraform" },
+      { bubble: "Azure" },
       { bubble: "SQL" },
     ],
   },
@@ -43,13 +44,21 @@ const experiences = [
     company: "Fisher Investments",
     companyUrl: "https://www.fisherinvestments.com",
     date: "2025 - 2026",
-    description:
-      "Built and maintained data pipelines on the Integrations team within the Portfolio Management Group, supporting systems managing $400B+ in assets under management",
+    description: (
+      <>
+        Developed Python-based directed acyclic graphs (DAGs) in Apache Airflow
+        to automate job scheduling as part of a proof of concept.
+        <br />
+        Built, maintained, and tested Azure Data Factory pipelines on the
+        Integrations team within the Portfolio Management Group, supporting
+        systems managing $300B+ in assets under management.
+      </>
+    ),
     bubbles: [
-      { bubble: "Azure" },
-      { bubble: "Azure Data Factory" },
       { bubble: "Python" },
       { bubble: "Apache Airflow" },
+      { bubble: "Azure" },
+      { bubble: "Azure Data Factory" },
       { bubble: "SQL" },
     ],
   },
@@ -60,7 +69,7 @@ const experiences = [
     companyUrl: "https://www.fisherinvestments.com",
     date: "2025",
     description:
-      "Built an observability tool which reduced error response times by 30% across systems managing $400B+ in assets under management",
+      "Built an observability tool which reduced error response times by 30% across systems managing $400B+ in assets under management.",
     bubbles: [
       { bubble: "Splunk" },
       { bubble: "Dynatrace" },
