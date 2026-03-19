@@ -51,7 +51,7 @@ const experiences = [
         <br />
         Built, maintained, and tested Azure Data Factory pipelines on the
         Integrations team within the Portfolio Management Group, supporting
-        systems managing $300B+ in assets under management.
+        systems managing $400B+ in assets under management.
       </>
     ),
     bubbles: [
