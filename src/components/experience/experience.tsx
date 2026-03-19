@@ -5,20 +5,44 @@ function ExperienceComponent() {
     <div className="experience-component-container">
       <div className="currently">
         <div className="title">Currently -</div>
-        <a href={"/#About"} className="experience">
-          Platform Engineer @ Mirion
-        </a>
+        <div className="experience">
+          Platform Engineer @{" "}
+          <a
+            className="e-company-link"
+            href="https://www.mirion.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mirion
+          </a>
+        </div>
       </div>
 
       <div className="previously">
         <div className="title">Previously -</div>
-        <a href={"/#About"} className="experience">
-          Data Engineer @ Fisher Investments
-        </a>
+        <div className="experience">
+          Data Engineer @{" "}
+          <a
+            className="e-company-link"
+            href="https://www.fisherinvestments.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fisher Investments
+          </a>
+        </div>
 
-        <a href={"/#About"} className="experience">
-          Data Engineer Intern @ Fisher Investments
-        </a>
+        <div className="experience">
+          Data Engineer Intern @{" "}
+          <a
+            className="e-company-link"
+            href="https://www.fisherinvestments.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fisher Investments
+          </a>
+        </div>
       </div>
     </div>
   );
