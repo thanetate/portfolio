@@ -30,15 +30,25 @@ const experiences = [
     bullets: [
       {
         bullet:
-          "Developed Python-based directed acyclic graphs (DAGs) in Apache Airflow to automate job scheduling as part of a proof of concept. Built, maintained, and tested Azure Data Factory pipelines on the Integrations team within the Portfolio Management Group, supporting systems managing $300B+ in assets under management.",
+          "Built, maintained, and tested Azure Data Factory (ADF) pipelines supporting systems managing $300B+ in assets under management.",
+      },
+      {
+        bullet:
+          "Developed Python-based Airflow DAGs to automate scheduling and orchestration of data workflows as part of a proof of concept.",
+      },
+      {
+        bullet:
+          "Designed a Splunk dashboard for production support, achieving 100% monitoring coverage of mission-critical data pipelines and improving incident detection/response.",
       },
     ],
     bubbles: [
-      { bubble: "Python" },
-      { bubble: "Apache Airflow" },
       { bubble: "Azure" },
-      { bubble: "Azure Data Factory" },
+      { bubble: "Python" },
       { bubble: "SQL" },
+      { bubble: "Azure Data Factory" },
+      { bubble: "Apache Airflow" },
+      { bubble: "Splunk" },
+      { bubble: "Dynatrace" },
     ],
   },
   {
@@ -67,7 +77,7 @@ const experiences = [
     bullets: [
       {
         bullet:
-          "Built a responsive, image-optimized, SEO-friendly website for a photography student, improving user experience and search visibility.",
+          "Designed and developed a responsive, image-optimized portfolio site for a photography student, increasing site traffic by 100+ visitors in the first month.",
       },
     ],
     bubbles: [
