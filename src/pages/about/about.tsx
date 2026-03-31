@@ -26,16 +26,8 @@ const experiences = [
     company: "Mirion Technologies",
     companyUrl: "https://www.mirion.com",
     date: "2026 - Present",
-    description:
-      "Developing and maintaining cloud infrastructure and data platforms that power large-scale applications and data processing.",
-    bubbles: [
-      { bubble: "Python" },
-      { bubble: "Databricks" },
-      { bubble: "Apache Spark" },
-      { bubble: "Terraform" },
-      { bubble: "Azure" },
-      { bubble: "SQL" },
-    ],
+    description: "",
+    bubbles: [],
   },
 
   {
@@ -46,20 +38,25 @@ const experiences = [
     date: "2025 - 2026",
     description: (
       <>
-        Developed Python-based directed acyclic graphs (DAGs) in Apache Airflow
-        to automate job scheduling as part of a proof of concept.
+        Built, maintained, and tested Azure Data Factory (ADF) pipelines
+        supporting systems managing $400B+ in assets under management.
         <br />
-        Built, maintained, and tested Azure Data Factory pipelines on the
-        Integrations team within the Portfolio Management Group, supporting
-        systems managing $400B+ in assets under management.
+        Developed Python-based Airflow DAGs to automate scheduling and
+        orchestration of data workflows as part of a proof of concept.
+        <br />
+        Designed a Splunk dashboard for production support, achieving 100%
+        monitoring coverage of mission-critical data pipelines and improving
+        incident detection/response.
       </>
     ),
     bubbles: [
-      { bubble: "Python" },
-      { bubble: "Apache Airflow" },
       { bubble: "Azure" },
-      { bubble: "Azure Data Factory" },
+      { bubble: "Python" },
       { bubble: "SQL" },
+      { bubble: "Azure Data Factory" },
+      { bubble: "Apache Airflow" },
+      { bubble: "Splunk" },
+      { bubble: "Dynatrace" },
     ],
   },
   {
@@ -69,7 +66,7 @@ const experiences = [
     companyUrl: "https://www.fisherinvestments.com",
     date: "2025",
     description:
-      "Built an observability tool which reduced error response times by 30% across systems managing $400B+ in assets under management.",
+      "Built an observability tool using Splunk and Dynatrace, reducing incident response times by 30% across systems supporting $400B+ in assets under management.",
     bubbles: [
       { bubble: "Splunk" },
       { bubble: "Dynatrace" },
