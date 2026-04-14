@@ -149,11 +149,11 @@ function Aboutpage() {
         <LineComponent />
         <div className="content">
           Hello, I'm Thane! <br></br>A recent grad from the Unviersity of North
-          Texas, with a degree in Computer Science
+          Texas, with a degree in Computer Science.
           <br></br> Currently, I'm working at Mirion as a Platform Engineer.
           Before that, I interned and worked at Fisher Investments as a Data
           Engineer. <br></br> Lately, I've been excited to learn more about
-          Azure, Python, and Databricks.
+          Azure, Databricks, and Claude.
         </div>
         <div className="title-two">Experience</div>
         <LineComponent />
