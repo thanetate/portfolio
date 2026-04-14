@@ -38,15 +38,14 @@ const experiences = [
     date: "2025 - 2026",
     description: (
       <>
-        Built, maintained, and tested Azure Data Factory (ADF) pipelines
-        supporting systems managing $400B+ in assets under management.
+        Built, maintained, and tested ETL pipelines using Azure Data Factory
+        (ADF) supporting systems managing $300B+ in AUM.
         <br />
-        Developed Python-based Airflow DAGs to automate scheduling and
-        orchestration of data workflows as part of a proof of concept.
+        Automated workflow orchestration by developing Python-based Airflow DAGs
+        for a proof of concept.
         <br />
-        Designed a Splunk dashboard for production support, achieving 100%
-        monitoring coverage of mission-critical data pipelines and improving
-        incident detection/response.
+        Achieved 100% monitoring coverage of mission-critical pipelines by
+        designing observability dashboards using Splunk and Dynatrace.
       </>
     ),
     bubbles: [
@@ -148,11 +147,35 @@ function Aboutpage() {
         <div className="title">About Me</div>
         <LineComponent />
         <div className="content">
-          Hello, I’m Thane! <br></br>I recently graduated from the University of
-          North Texas with a degree in Computer Science and currently work as a
-          Platform Engineer at Mirion. Before this, I interned and worked at
-          Fisher Investments, where I got my first real exposure to data
-          engineering. <br></br>
+          Hello, I’m Thane! <br></br>I recently graduated from the{" "}
+          <a
+            className="about-inline-link"
+            href="https://www.unt.edu"
+            target="_blank"
+            rel="noreferrer"
+          >
+            University of North Texas
+          </a>{" "}
+          with a degree in Computer Science and currently work as a Platform
+          Engineer at{" "}
+          <a
+            className="about-inline-link"
+            href="https://www.mirion.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mirion
+          </a>
+          . Before this, I interned and worked at{" "}
+          <a
+            className="about-inline-link"
+            href="https://www.fisherinvestments.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fisher Investments
+          </a>
+          , where I got my first real exposure to data engineering. <br></br>
           That experience sparked a strong interest in the field, and lately
           I’ve been diving deeper into tools like Azure, Databricks, and Claude
           to continue building in the data space.

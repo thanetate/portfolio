@@ -1,6 +1,39 @@
 @import '../../styles.less';
 
 .aboutpage-container {
+    .about-inline-link {
+        display: inline-block;
+        position: relative;
+        color: @text-link;
+        text-decoration: none;
+        transition: color 0.12s ease;
+    }
+
+    .about-inline-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 2px;
+        left: 0;
+        background-color: #FFFFFF;
+        transform-origin: bottom left;
+        transition: transform 0.16s ease-out;
+    }
+
+    .about-inline-link:hover,
+    .about-inline-link:focus-visible {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .about-inline-link:hover::after,
+    .about-inline-link:focus-visible::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
     .title {
         margin-top: @component-spacing-large;
         font-size: @fontsize-phone-medium;
@@ -174,5 +207,6 @@
             border-style: solid;
             border-width: 1px;
         }
+
     }
 }
