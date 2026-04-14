@@ -23,7 +23,7 @@ const experiences = [
   {
     id: 4,
     title: "Platform Engineer",
-    company: "Mirion Technologies",
+    company: "Mirion",
     companyUrl: "https://www.mirion.com",
     date: "2026 - Present",
     description: "",
@@ -100,7 +100,7 @@ function Aboutpage() {
 
   const experienceList = experiences.map((experience) => {
     return (
-      <div key={experience.id}>
+      <div key={experience.id} className="experience-item">
         <div className="rightleft-container">
           <div className="right">
             <div className="e-title">{experience.title}</div>
@@ -148,12 +148,14 @@ function Aboutpage() {
         <div className="title">About Me</div>
         <LineComponent />
         <div className="content">
-          Hello, I'm Thane! <br></br>A recent grad from the Unviersity of North
-          Texas, with a degree in Computer Science.
-          <br></br> Currently, I'm working at Mirion as a Platform Engineer.
-          Before that, I interned and worked at Fisher Investments as a Data
-          Engineer. <br></br> Lately, I've been excited to learn more about
-          Azure, Databricks, and Claude.
+          Hello, I’m Thane! <br></br>I recently graduated from the University of
+          North Texas with a degree in Computer Science and currently work as a
+          Platform Engineer at Mirion. Before this, I interned and worked at
+          Fisher Investments, where I got my first real exposure to data
+          engineering. <br></br>
+          That experience sparked a strong interest in the field, and lately
+          I’ve been diving deeper into tools like Azure, Databricks, and Claude
+          to continue building in the data space.
         </div>
         <div className="title-two">Experience</div>
         <LineComponent />
