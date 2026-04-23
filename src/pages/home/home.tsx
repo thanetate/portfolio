@@ -87,6 +87,11 @@ function Homepage() {
               <Projectpage />
             </div>
           )}
+          {activeSection === "#Data" && (
+            <div className="project-container">
+              <Projectpage />
+            </div>
+          )}
         </div>
       </div>
     </div>
