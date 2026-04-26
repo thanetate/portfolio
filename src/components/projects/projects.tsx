@@ -9,7 +9,7 @@ function ProjectsComponent() {
   return (
     <div className="projects-component-container">
       <a className="project1-container" href="/#Mapo">
-        <div className="media-frame">
+        <div className="media-frame mapo-frame">
           {!isMapoLoaded && (
             <div className="media-placeholder" aria-hidden="true">
               <div className="loading-spinner" />

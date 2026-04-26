@@ -138,6 +138,7 @@ function Projectpage() {
   };
 
   const isDataProject = currentProject?.paramname === "data";
+  const isMapoProject = currentProject?.paramname === "mapo";
   const firstDataImage = isDataProject ? currentProject?.image[0] : undefined;
   const remainingImages = isDataProject
     ? (currentProject?.image.slice(1) ?? [])
@@ -228,7 +229,7 @@ function Projectpage() {
                       )}
                       <img
                         src={firstDataImage.image}
-                        className={`demo-image ${loadedImages[firstDataImage.image] ? "is-loaded" : ""}`}
+                        className={`demo-image ${isMapoProject ? "mapo-demo-image" : ""} ${loadedImages[firstDataImage.image] ? "is-loaded" : ""}`}
                         onLoad={() => handleImageLoaded(firstDataImage.image)}
                         onError={() => handleImageLoaded(firstDataImage.image)}
                       />
@@ -237,7 +238,7 @@ function Projectpage() {
                 )}
                 {currentProject?.demo && (
                   <div
-                    className={`demo-media-frame ${currentProject.paramname === "data" ? "data-demo-frame" : ""}`}
+                    className={`demo-media-frame ${currentProject.paramname === "data" ? "data-demo-frame" : ""} ${currentProject.paramname === "mapo" ? "mapo-demo-frame" : ""}`}
                   >
                     {!isDemoLoaded && (
                       <div className="media-placeholder" aria-hidden="true">
@@ -266,7 +267,7 @@ function Projectpage() {
                       )}
                       <img
                         src={image.image}
-                        className={`demo-image ${loadedImages[image.image] ? "is-loaded" : ""}`}
+                        className={`demo-image ${isMapoProject ? "mapo-demo-image" : ""} ${loadedImages[image.image] ? "is-loaded" : ""}`}
                         onLoad={() => handleImageLoaded(image.image)}
                         onError={() => handleImageLoaded(image.image)}
                       />
