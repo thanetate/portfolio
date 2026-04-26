@@ -31,28 +31,7 @@ function ProjectsComponent() {
           Browser-based mind mapping tool, designed to be simple and intuitive.
         </div>
       </a>
-      <a className="project2-container" href="/#Theory">
-        <div className="media-frame">
-          {!isTheoryLoaded && (
-            <div className="media-placeholder" aria-hidden="true">
-              <div className="loading-spinner" />
-            </div>
-          )}
-          <img
-            className={isTheoryLoaded ? "is-loaded" : ""}
-            src="theory-img-1.png"
-            alt=""
-            onLoad={() => setIsTheoryLoaded(true)}
-            onError={() => setIsTheoryLoaded(true)}
-          />
-        </div>
-        <div className="title">Theory</div>
-        <div className="desc">
-          An e-commerce store for climbing apparel, integrated with the Stripe
-          API for secure checkout.
-        </div>
-      </a>
-      <a className="project3-container" href="/#Data">
+      <a className="project2-container" href="/#Data">
         <div className="media-frame">
           {!isDataPlatformLoaded && (
             <div className="media-placeholder" aria-hidden="true">
@@ -71,6 +50,27 @@ function ProjectsComponent() {
         <div className="desc">
           A small end-to-end data engineering pipeline that simulates a
           real-world production workflow.
+        </div>
+      </a>
+      <a className="project3-container" href="/#Theory">
+        <div className="media-frame">
+          {!isTheoryLoaded && (
+            <div className="media-placeholder" aria-hidden="true">
+              <div className="loading-spinner" />
+            </div>
+          )}
+          <img
+            className={isTheoryLoaded ? "is-loaded" : ""}
+            src="theory-img-1.png"
+            alt=""
+            onLoad={() => setIsTheoryLoaded(true)}
+            onError={() => setIsTheoryLoaded(true)}
+          />
+        </div>
+        <div className="title">Theory</div>
+        <div className="desc">
+          An e-commerce store for climbing apparel, integrated with the Stripe
+          API for secure checkout.
         </div>
       </a>
     </div>

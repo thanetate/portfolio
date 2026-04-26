@@ -106,7 +106,7 @@ function Projectpage() {
       team: "",
       github: "https://github.com/thanetate/data-engineering-platform",
       live: "https://adb-7405608124467958.18.azuredatabricks.net/dashboardsv3/01f139b6d70b1bacbcd97b6945df90e6/published?o=7405608124467958",
-      demo: "",
+      demo: "Data-Engineering-Demo.mov",
       image: [
         { image: "/Mapo_Architecture_Diagram.png" },
         { image: "/Dashboard_Close.png" },
