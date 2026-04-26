@@ -32,17 +32,20 @@ function ProjectsComponent() {
         </div>
       </a>
       <a className="project2-container" href="/#Data">
-        <div className="media-frame">
+        <div className="media-frame data-platform-frame">
           {!isDataPlatformLoaded && (
             <div className="media-placeholder" aria-hidden="true">
               <div className="loading-spinner" />
             </div>
           )}
-          <img
+          <video
             className={isDataPlatformLoaded ? "is-loaded" : ""}
-            src="Databricks_Notebook.png"
-            alt=""
-            onLoad={() => setIsDataPlatformLoaded(true)}
+            src="/Data-Engineering-Demo.mov"
+            autoPlay
+            loop
+            muted
+            playsInline
+            onLoadedData={() => setIsDataPlatformLoaded(true)}
             onError={() => setIsDataPlatformLoaded(true)}
           />
         </div>
