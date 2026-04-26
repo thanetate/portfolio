@@ -137,12 +137,7 @@ function Projectpage() {
     }));
   };
 
-  const isDataProject = currentProject?.paramname === "data";
   const isMapoProject = currentProject?.paramname === "mapo";
-  const firstDataImage = isDataProject ? currentProject?.image[0] : undefined;
-  const remainingImages = isDataProject
-    ? (currentProject?.image.slice(1) ?? [])
-    : (currentProject?.image ?? []);
 
   return (
     <div className="projectpage-container">
@@ -219,23 +214,6 @@ function Projectpage() {
               )}
               <LineComponent />
               <div className="project-media-container">
-                {isDataProject && firstDataImage && (
-                  <div className="demo-image-container">
-                    <div className="demo-image-frame">
-                      {!loadedImages[firstDataImage.image] && (
-                        <div className="media-placeholder" aria-hidden="true">
-                          <div className="loading-spinner" />
-                        </div>
-                      )}
-                      <img
-                        src={firstDataImage.image}
-                        className={`demo-image ${isMapoProject ? "mapo-demo-image" : ""} ${loadedImages[firstDataImage.image] ? "is-loaded" : ""}`}
-                        onLoad={() => handleImageLoaded(firstDataImage.image)}
-                        onError={() => handleImageLoaded(firstDataImage.image)}
-                      />
-                    </div>
-                  </div>
-                )}
                 {currentProject?.demo && (
                   <div
                     className={`demo-media-frame ${currentProject.paramname === "data" ? "data-demo-frame" : ""} ${currentProject.paramname === "mapo" ? "mapo-demo-frame" : ""}`}
@@ -258,7 +236,7 @@ function Projectpage() {
                   </div>
                 )}
                 <div className="demo-image-container">
-                  {remainingImages.map((image: Demo, index: number) => (
+                  {currentProject.image.map((image: Demo, index: number) => (
                     <div key={index} className="demo-image-frame">
                       {!loadedImages[image.image] && (
                         <div className="media-placeholder" aria-hidden="true">
