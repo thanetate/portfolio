@@ -5,88 +5,17 @@
     flex-direction: column;
     gap: @component-spacing-small;
 
-    .media-frame {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        overflow: hidden;
-        border-radius: 1px;
-        background-color: white;
-    }
-
-    .project1-container .mapo-frame {
-        background-color: white;
-    }
-
-    .project1-container .mapo-frame video {
-        background-color: white;
-    }
-
-    .project2-container .data-platform-frame {
-        background-color: #1F272D;
-    }
-
-    .project2-container .data-platform-frame .media-placeholder {
-        background-color: #1F272D;
-    }
-
-    .project2-container .data-platform-frame video {
-        background-color: #1F272D;
-    }
-
-    .media-placeholder {
-        position: absolute;
-        inset: 0;
-        background-color: white;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .loading-spinner {
-        width: 32px;
-        height: 32px;
-        border: 4px dotted #111111;
-        border-radius: 50%;
-        display: inline-block;
-        position: relative;
-        box-sizing: border-box;
-        animation: rotation 1.2s linear infinite;
-        background-color: white;
-    }
-
     img {
-        position: absolute;
-        inset: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 1px;
-        opacity: 0;
-        transition: opacity 0.2s ease;
     }
 
     video {
-        position: absolute;
-        inset: 0;
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 1px;
-        opacity: 0;
-        transition: opacity 0.2s ease;
-    }
-
-    img.is-loaded,
-    video.is-loaded {
-        opacity: 1;
     }
 
     .title {
         color: @text-01;
         font-size: @fontsize-phone-medium;
-        margin-top: 5px;
     }
 
     .desc {
@@ -106,27 +35,6 @@
         flex-direction: column;
         gap: 5px;
         text-decoration: none;
-
-        video {
-            object-fit: contain;
-        }
-    }
-
-    .project3-container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        text-decoration: none;
-    }
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
     }
 }
 
