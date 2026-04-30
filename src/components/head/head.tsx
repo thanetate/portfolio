@@ -7,7 +7,7 @@ function HeadComponent() {
       <div className="head-content">
         <div className="title">Thane Tate</div>
         <div className="description-line">
-          A recent grad with a degree in Computer Science.
+          A recent grad with a degree in Computer Science
         </div>
         <div className="location-line">
           <i className="ri-map-pin-add-fill"></i>

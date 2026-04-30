@@ -3,6 +3,7 @@ import LineComponent from "../../components/line/line";
 import { useEffect } from "react";
 import type { ReactNode } from "react";
 import { motion } from "framer-motion";
+import "remixicon/fonts/remixicon.css";
 import "./about.less";
 
 type bubbles = {
@@ -37,16 +38,29 @@ const experiences = [
     companyUrl: "https://www.fisherinvestments.com",
     date: "2025 - 2026",
     description: (
-      <>
-        Built, maintained, and tested ETL pipelines using Azure Data Factory
-        (ADF) supporting systems managing $300B+ in AUM.
-        <br />
-        Automated workflow orchestration by developing Python-based Airflow DAGs
-        for a proof of concept.
-        <br />
-        Achieved 100% monitoring coverage of mission-critical pipelines by
-        designing observability dashboards using Splunk and Dynatrace.
-      </>
+      <div className="bullet-points-container">
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Enhanced scalable data pipelines in Azure Data Factory supporting
+            $300B+ AUM, ensuring data reliability and consistent delivery.
+          </span>
+        </div>
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Automated batch pipeline orchestration by developing Python-based
+            Apache Airflow DAGs for a proof-of-concept.
+          </span>
+        </div>
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Owned observability dashboards, achieving 100% monitoring coverage
+            of mission-critical ETL pipelines using Splunk and Dynatrace.
+          </span>
+        </div>
+      </div>
     ),
     bubbles: [
       { bubble: "Azure" },
