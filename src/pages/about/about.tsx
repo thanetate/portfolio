@@ -23,7 +23,7 @@ type experiences = {
 const experiences = [
   {
     id: 4,
-    title: "Platform Engineer",
+    title: "Platform Engineer 1",
     company: "Mirion",
     companyUrl: "https://www.mirion.com",
     date: "2026 - Present",
@@ -64,9 +64,9 @@ const experiences = [
     ),
     bubbles: [
       { bubble: "Azure" },
-      { bubble: "Python" },
-      { bubble: "SQL" },
       { bubble: "Azure Data Factory" },
+      { bubble: "SQL" },
+      { bubble: "Python" },
       { bubble: "Apache Airflow" },
       { bubble: "Splunk" },
       { bubble: "Dynatrace" },
