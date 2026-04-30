@@ -1,6 +1,6 @@
-import "./experience.less";
+import "./header-experience.less";
 
-function ExperienceComponent() {
+function HeaderExperienceComponent() {
   return (
     <div className="experience-component-container">
       <div className="currently">
@@ -48,4 +48,4 @@ function ExperienceComponent() {
   );
 }
 
-export default ExperienceComponent;
+export default HeaderExperienceComponent;

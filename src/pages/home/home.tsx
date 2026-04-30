@@ -1,6 +1,6 @@
 import NavBarComponent from "../../components/navbar/navbar";
 import HeadComponent from "../../components/head/head";
-import ExperienceComponent from "../../components/experience/experience";
+import HeaderExperienceComponent from "../../components/header-experience/header-experience";
 import ProjectsComponent from "../../components/projects/projects";
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
@@ -44,7 +44,7 @@ function Homepage() {
             <HeadComponent />
           </div>
           <div className="experience-container">
-            <ExperienceComponent />
+            <HeaderExperienceComponent />
           </div>
         </div>
         <div className="rightside-container">
@@ -60,7 +60,7 @@ function Homepage() {
                   <HeadComponent />
                 </div>
                 <div className="experience-container">
-                  <ExperienceComponent />
+                  <HeaderExperienceComponent />
                 </div>
                 <a className="projects-container">
                   <ProjectsComponent />
