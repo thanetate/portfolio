@@ -49,7 +49,6 @@ function Projectpage() {
       description2:
         "Mind mapping is a technique used to help visually develop and organize ideas. They are most commonly used for note taking, brainstorming ideas, and project planning. By mapping ideas visually, we can break down and retain information better.",
       skills: [
-        { bubble: "AWS" },
         { bubble: "Angular" },
         { bubble: "TypeScript" },
         { bubble: "Golang" },
@@ -104,7 +103,7 @@ function Projectpage() {
         { bubble: "Terraform" },
       ],
       team: "",
-      github: "https://github.com/thanetate/data-engineering-platform",
+      github: "https://github.com/thanetate/data-platform",
       live: "https://adb-7405608124467958.18.azuredatabricks.net/dashboardsv3/01f139b6d70b1bacbcd97b6945df90e6/published?o=7405608124467958",
       demo: "Data-Engineering-Demo.mov",
       image: [
