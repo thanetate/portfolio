@@ -78,8 +78,33 @@ const experiences = [
     company: "Fisher Investments",
     companyUrl: "https://www.fisherinvestments.com",
     date: "2025",
-    description:
-      "Built an observability tool using Splunk and Dynatrace, reducing incident response times by 30% across systems supporting $400B+ in assets under management.",
+    description: (
+      <div className="bullet-points-container">
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Reduced Incident response times by 30% for mission-critical data
+            pipelines supporting $300B+ AUM using observability dashboards with
+            Splunk and Dynatrace.
+          </span>
+        </div>
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Built end-to-end observability by integrating 500k+ daily logs from
+            Azure Data Factory, REST APIs, and SQL-based systems.
+          </span>
+        </div>
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Enhanced observability for 450+ pipelines by implementing nested
+            pipeline tracing, improving log visibility and accelerating issue
+            diagnosis.
+          </span>
+        </div>
+      </div>
+    ),
     bubbles: [
       { bubble: "Splunk" },
       { bubble: "Dynatrace" },
@@ -93,8 +118,18 @@ const experiences = [
     title: "Freelance Web Developer",
     company: "Self-Employed",
     date: "2024",
-    description:
-      "Designed and developed a responsive, image-optimized portfolio site for a photography student, increasing site traffic by 100+ visitors in the first month.",
+    description: (
+      <div className="bullet-points-container">
+        <div className="bullet-point">
+          <i className="ri-asterisk bullet-icon"></i>
+          <span>
+            Designed and developed a responsive, image-optimized portfolio site
+            for a photography student, increasing site traffic by 100+ visitors
+            in the first month.
+          </span>
+        </div>
+      </div>
+    ),
     bubbles: [
       { bubble: "React" },
       { bubble: "TypeScript" },
