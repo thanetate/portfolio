@@ -1,7 +1,7 @@
-import "./projects.less";
+import "./project-preview.less";
 import { useState } from "react";
 
-function ProjectsComponent() {
+function ProjectPreviewComponent() {
   const [isMapoLoaded, setIsMapoLoaded] = useState(false);
   const [isDataPlatformLoaded, setIsDataPlatformLoaded] = useState(false);
   const [isTheoryLoaded, setIsTheoryLoaded] = useState(false);
@@ -80,4 +80,4 @@ function ProjectsComponent() {
   );
 }
 
-export default ProjectsComponent;
+export default ProjectPreviewComponent;

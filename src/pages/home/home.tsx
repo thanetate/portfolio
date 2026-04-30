@@ -1,7 +1,7 @@
 import NavBarComponent from "../../components/navbar/navbar";
 import HeadComponent from "../../components/head/head";
 import HeadExperienceComponent from "../../components/head-experience/head-experience";
-import ProjectsComponent from "../../components/projects/projects";
+import ProjectPreviewComponent from "../../components/project-preview/project-preview";
 import FooterComponent from "../../components/footer/footer";
 import LineComponent from "../../components/line/line";
 import Aboutpage from "../about/about";
@@ -63,7 +63,7 @@ function Homepage() {
                   <HeadExperienceComponent />
                 </div>
                 <a className="projects-container">
-                  <ProjectsComponent />
+                  <ProjectPreviewComponent />
                 </a>
                 <div className="footer-container">
                   <LineComponent />
