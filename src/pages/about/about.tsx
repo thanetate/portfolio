@@ -196,7 +196,7 @@ function Aboutpage() {
         <div className="title">About Me</div>
         <LineComponent />
         <div className="content">
-          Hello, I’m Thane! <br></br>I recently graduated from the{" "}
+          Hello, I'm Thane! A Platform Engineer and a recent graduate from the{" "}
           <a
             className="about-inline-link"
             href="https://www.unt.edu"
@@ -205,29 +205,26 @@ function Aboutpage() {
           >
             University of North Texas
           </a>{" "}
-          with a degree in Computer Science and currently work as a Platform
-          Engineer at{" "}
-          <a
-            className="about-inline-link"
-            href="https://www.mirion.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Mirion
+          with a degree in Computer Science.
+          <br></br>I have experience working within the wealth management
+          industry as a data engineer supporting data pipelines that power
+          $300B+ in AUM. During my previous internship I built an observability
+          tool used daily by engineers to troubleshoot and resolve issues
+          happening within the mission-critical pipelines and APIs.
+          <br></br>
+          Lately, I've been excited learning more about data engineering. This
+          led me to build a small end-to-end{" "}
+          <a className="about-inline-link" href="/#Data">
+            data pipeline
+          </a>{" "}
+          to simulate real world data engineering workflows using current
+          technologies like Azure, Databricks, and Terraform. I also have
+          experience building full-stack web applications like{" "}
+          <a className="about-inline-link" href="/#Mapo">
+            Mapo
           </a>
-          . Before this, I interned and worked at{" "}
-          <a
-            className="about-inline-link"
-            href="https://www.fisherinvestments.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Fisher Investments
-          </a>
-          , where I got my first real exposure to data engineering. <br></br>
-          That experience sparked a strong interest in the field, and lately
-          I’ve been diving deeper into tools like Azure, Databricks, and Claude
-          to continue building in the data space.
+          , a lightweight mind mapping tool built for simplicity and ease of
+          use.
         </div>
         <div className="title-two">Experience</div>
         <LineComponent />
