@@ -245,6 +245,28 @@ function Aboutpage() {
             </div>
           </div>
         </div>
+        <div className="title-two">Certification</div>
+        <LineComponent />
+        <div className="education-container">
+          <div className="rightleft-container">
+            <div className="right">
+              <div className="e-title">Microsoft Azure Fundamentals</div>
+              <div className="e-company">
+                <a
+                  className="e-company-link"
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/ThaneTate-9623/BF9B3A7DCAEC7F2A?sharingId"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  AZ-900 Certification
+                </a>{" "}
+              </div>
+            </div>
+            <div className="left">
+              <div className="e-date">2024</div>
+            </div>
+          </div>
+        </div>
         <LineComponent />
         <FooterComponent />
       </motion.div>
