@@ -234,7 +234,16 @@ function Aboutpage() {
         <div className="education-container">
           <div className="rightleft-container">
             <div className="right">
-              <div className="e-title">University of North Texas</div>
+              <div className="e-title">
+                <a
+                  className="e-company-link"
+                  href="https://www.unt.edu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  University of North Texas
+                </a>
+              </div>
               <div className="e-company">
                 Bachelor of Science, Computer Science
               </div>

@@ -10,7 +10,7 @@ function FooterComponent() {
           <a href="mailto:thaneallantate@gmail.com">Email</a>
         </div>
         <div className="version-container">
-          <div className="version">v4.0.0</div>
+          <div className="version">v4.1.0</div>
         </div>
       </div>
     </div>
