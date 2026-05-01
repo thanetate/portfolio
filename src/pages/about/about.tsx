@@ -263,7 +263,7 @@ function Aboutpage() {
               </div>
             </div>
             <div className="left">
-              <div className="e-date">2024</div>
+              <div className="e-date">2026</div>
             </div>
           </div>
         </div>
